@@ -85,6 +85,7 @@ li {list-style: none;}
     height: 50px;
     margin: 0 auto;
     justify-content: space-between;
+    position: relative;
 }
 
 
@@ -125,11 +126,12 @@ li {list-style: none;}
 
 
 
-.Lnb_box .logo_box {
+.Lnb_box .lnb .logo_box {
     position: absolute;
     width: 150px;
     top: -30px;
-    left: 50%;
+    /* left: 50%; */
+    left: 639px;
     transform: translateX(-50%);
     border: 30px solid white;
     border-radius: 50%;
