@@ -539,14 +539,16 @@ button a {
 .HOT_2022 .outer_box {
     width: 100%;
     margin-bottom: 90px;
-    /* display: flex; */
+    display: flex;
 
-    border: 1px solid #333;
+    /* border: 1px solid #333; */
 }
 
 .HOT_2022 .outer_box .label_box {
     width: 270px;
     height: 620px;
+    /* padding-right: 55px; */
+    margin-right: 55px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
