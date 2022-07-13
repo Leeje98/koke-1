@@ -11,6 +11,7 @@ li {list-style: none;}
     width: 970px;
 
     overflow: hidden;
+    display: none;
 }
 
 .hot_2022_swiper {
@@ -22,7 +23,8 @@ li {list-style: none;}
     height: 360px;
     background: #faf7e8;
     border-radius: 20px;
-    /* padding: 35px 80px; */
+    cursor: pointer;
+    margin-bottom: 40px;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -58,11 +60,28 @@ li {list-style: none;}
     position: relative;
     width: 450px;
 }
+.hot_2022_swiper .swiper-wrapper .swiper-slide .box .text_box .title {
+    font-size: 17px;
+    color: #222;
+    margin-bottom: 20px;
+}
+.hot_2022_swiper .swiper-wrapper .swiper-slide .box .text_box .taste {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 15px;
+}
+.hot_2022_swiper .swiper-wrapper .swiper-slide .box .text_box .price {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 40px;
+}
+
+
 
 .hot_2022_swiper .swiper-wrapper .swiper-slide .box .text_box .brand_naming {
     position: absolute;
     display: flex;
-    bottom: 20px;
+    bottom: -15px;
     right: 0;
 }
 
@@ -117,9 +136,15 @@ li {list-style: none;}
     height: 260px;
     opacity: 0.4;
     text-align: center;
+    cursor: pointer;
 }
 
-.hot_2022_swiper_ind .swiper-wrapper .swiper-slide-thumb-active {
+.sheet_01 .hot_2022_swiper_ind .swiper-wrapper .swiper-slide-thumb-active,
+.sheet_02 .hot_2022_swiper_ind .swiper-wrapper .swiper-slide-thumb-active,
+.sheet_03 .hot_2022_swiper_ind .swiper-wrapper .swiper-slide-thumb-active,
+.sheet_04 .hot_2022_swiper_ind .swiper-wrapper .swiper-slide-thumb-active,
+.sheet_05 .hot_2022_swiper_ind .swiper-wrapper .swiper-slide-thumb-active,
+.sheet_06 .hot_2022_swiper_ind .swiper-wrapper .swiper-slide-thumb-active {
     opacity: 1;
 }
 

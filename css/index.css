@@ -563,10 +563,32 @@ button a {
 .HOT_2022 .outer_box .label_box label .logo_box {
     width: 100%;
     border: 1px solid #ccc;
-    border-radius: 50px;
+    border-radius: 50%;
     overflow: hidden;
     margin-bottom: 20px;
 }
 .HOT_2022 .outer_box .label_box label .logo_box img {
     width: 100%;
 }
+
+#hot_brand_01:checked ~ .outer_box .sheet_box .sheet_01 {display: block;}
+#hot_brand_02:checked ~ .outer_box .sheet_box .sheet_02 {display: block;}
+#hot_brand_03:checked ~ .outer_box .sheet_box .sheet_03 {display: block;}
+#hot_brand_04:checked ~ .outer_box .sheet_box .sheet_04 {display: block;}
+#hot_brand_05:checked ~ .outer_box .sheet_box .sheet_05 {display: block;}
+#hot_brand_06:checked ~ .outer_box .sheet_box .sheet_06 {display: block;}
+
+#hot_brand_01:checked ~ .outer_box .label_box .hot_brand_001 {color: #ff6c57;}
+#hot_brand_02:checked ~ .outer_box .label_box .hot_brand_002 {color: #ff6c57;}
+#hot_brand_03:checked ~ .outer_box .label_box .hot_brand_003 {color: #ff6c57;}
+#hot_brand_04:checked ~ .outer_box .label_box .hot_brand_004 {color: #ff6c57;}
+#hot_brand_05:checked ~ .outer_box .label_box .hot_brand_005 {color: #ff6c57;}
+#hot_brand_06:checked ~ .outer_box .label_box .hot_brand_006 {color: #ff6c57;}
+
+#hot_brand_01:checked ~ .outer_box .label_box label .logo_box_01 {border: 5px solid #ff6c57;}
+#hot_brand_02:checked ~ .outer_box .label_box label .logo_box_02 {border: 5px solid #ff6c57;}
+#hot_brand_03:checked ~ .outer_box .label_box label .logo_box_03 {border: 5px solid #ff6c57;}
+#hot_brand_04:checked ~ .outer_box .label_box label .logo_box_04 {border: 5px solid #ff6c57;}
+#hot_brand_05:checked ~ .outer_box .label_box label .logo_box_05 {border: 5px solid #ff6c57;}
+#hot_brand_06:checked ~ .outer_box .label_box label .logo_box_06 {border: 5px solid #ff6c57;}
+
