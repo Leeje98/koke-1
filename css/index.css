@@ -274,7 +274,7 @@ button a {
 
 
 .main_visual {
-    width: 100%;
+    width: 99.9%;
     height: 920px;
     background-image: url(../imags/mian/main_visual.png);
     background-size: cover;
@@ -506,7 +506,7 @@ button a {
 
 .HOT_2022 {
     width: 1278px;
-    margin: 0 auto;
+    margin: 0 auto 150px;
 }
 
 .HOT_2022 h2 {
@@ -592,3 +592,445 @@ button a {
 #hot_brand_05:checked ~ .outer_box .label_box label .logo_box_05 {border: 5px solid #ff6c57;}
 #hot_brand_06:checked ~ .outer_box .label_box label .logo_box_06 {border: 5px solid #ff6c57;}
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------brand_video--------------------- */
+
+.brand_video {
+    width: 100%;
+    background-image: url(../imags/mian/main_video_bg\(crop\).png);
+    background-size: cover;
+    margin-bottom: 150px;
+}
+
+.brand_video .brand_video_inner {
+    width: 1278px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.brand_video .brand_video_inner .text_box {
+    width: 510px;
+    color: #faf7e8;
+}
+
+.brand_video .brand_video_inner .text_box h2 {
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 80px;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+}
+
+.brand_video .brand_video_inner .video_box {
+    width: 630px;
+    height: 340px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------brand_review--------------------- */
+
+
+.brand_review {
+    width: 1278px;
+    margin: 0 auto 170px;
+}
+
+.brand_review h2 {
+    font-size: 39px;
+    margin-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.brand_review h3 {
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 27px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.brand_review .swiper {
+    height: 500px;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.brand_review .swiper .swiper-wrapper .swiper-slide {
+    width: 300px;
+    /* height: 450px; */
+}
+
+.brand_review .swiper .swiper-wrapper .swiper-slide .img_box {
+    /* width: 100%; */
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid #333; */
+    background-size: cover;
+}
+   
+
+.brand_review .swiper .swiper-wrapper .slide01 .img_box {
+    background-image: url(../imags/mian/review_01.jpg);
+}
+.brand_review .swiper .swiper-wrapper .slide02 .img_box {
+    background-image: url(../imags/mian/review_02.jpg);
+}
+.brand_review .swiper .swiper-wrapper .slide03 .img_box {
+    background-image: url(../imags/mian/review_03.jpg);
+}
+.brand_review .swiper .swiper-wrapper .slide04 .img_box {
+    background-image: url(../imags/mian/review_04.jpg);
+}
+.brand_review .swiper .swiper-wrapper .slide05 .img_box {
+    background-image: url(../imags/mian/review_05.jpg);
+}
+.brand_review .swiper .swiper-wrapper .slide06 .img_box {
+    background-image: url(../imags/mian/review_06.jpg);
+}
+.brand_review .swiper .swiper-wrapper .slide07 .img_box {
+    background-image: url(../imags/mian/review_07.jpg);
+}
+
+.brand_review .swiper .swiper-wrapper .swiper-slide .img_box .label {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 0;
+    height: 0;
+    box-sizing: content-box;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+
+    border-top: 80px solid #ff6c57;
+    border-bottom: 25px solid transparent;
+    border-left: 30px solid #ff6c57;
+    border-right: 30px solid #ff6c57;
+}
+.swiper-slide .img_box .label .label_text {
+    position: relative;
+}
+.swiper-slide .img_box .label .label_text p {
+    position: absolute;
+    top: -50px;
+    left: -25px;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+}
+
+
+
+.brand_review .swiper .swiper-wrapper .swiper-slide .text_box {
+    padding: 32px 15px 30px;
+    background-color: #faf7e8;
+
+}
+
+.brand_review .swiper .swiper-wrapper .swiper-slide .text_box h2 {
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: start;
+    margin-bottom: 15px;
+}
+
+.brand_review .swiper .swiper-wrapper .swiper-slide .text_box h3{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 25px;
+}
+
+.brand_review .swiper .swiper-wrapper .swiper-slide .text_box p {
+    font-size: 14px;
+}
+
+.brand_review .swiper_tool {
+    width: 500px;
+    height: 100px;
+    margin: 30px auto 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.brand_review .swiper_tool div {
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.brand_review .swiper_tool div i {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------footer--------------------- */
+
+
+/* -----------------footer_menu--------------------- */
+
+.footer_menu {
+    width: 100%;
+    background-color: #fbfbfb;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.footer_menu_inner {
+    width: 1278px;
+    margin: 0 auto;
+    display: flex;
+    padding: 75px 0 75px;
+}
+
+.footer_menu_inner>div {
+    flex: 1;
+    border-right: 3px solid #e4e4e4;
+    padding-left: 25px;
+}
+.footer_menu_inner>div:first-child {
+    padding: 0;
+}
+
+.footer_menu_inner>div h5 {
+    color: gray;
+    font-weight: normal;
+    margin-bottom: 28px;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+.footer_menu_inner .cs_center .call {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 50px;
+    color: #222;
+}
+
+.footer_menu_inner .cs_center p {
+    color: gray;
+}
+
+
+
+.footer_menu_inner .store_guide .metapo_box {
+    display: flex;
+}
+
+.footer_menu_inner .store_guide .metapo_box>div {
+    margin: 0 15px;
+    text-align: center;
+    color: gray;
+}
+.footer_menu_inner .store_guide .metapo_box div i {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #e4e4e4;
+    border-radius: 50%;
+    line-height: 60px;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.footer_menu_inner .store_guide .metapo_box div p {
+    font-size: 11px;
+    line-height: 10px;
+    margin-bottom: 8px;
+}
+
+.footer_menu_inner .store_guide .metapo_box div div {
+    font-size: 12px;
+    padding: 3px 5px;
+    border: 1px solid #e4e4e4;
+    border-radius: 3px;
+}
+
+
+
+
+.footer_menu_inner .return_exchange {
+    border-right: none;
+    width: 410px;
+}
+
+#delivery, #return {display: none;}
+
+.footer_menu_inner .return_exchange .label_box {
+    display: flex;
+}
+
+.footer_menu_inner .return_exchange label {
+    display: block;
+    margin: 0;
+    width: 200px;
+    height: 30px;
+    background-color: #ebebeb;
+    border-bottom: 3px solid #e4e4e4;
+    text-align: center;
+    margin-bottom: 35px;
+    color: gray;
+    cursor: pointer;
+}
+.footer_menu_inner .return_exchange .tab01 {border-right: none;}
+.footer_menu_inner .return_exchange .tab02 {border-left: none;}
+
+.return_exchange .sheet> div {
+    color: gray;
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: 15px;
+
+    display: none;
+}
+
+.return_exchange .sheet> div p {
+    line-height: 14px;
+    margin-bottom: 13px;
+}
+
+.return_exchange .sheet .sheet_01 .button a {
+    padding: 3px 5px;
+    border: 1px solid #e4e4e4;
+    color: #222;
+    margin-top: 10px;
+}
+
+#delivery:checked ~ .label_box .tab01 {
+    border: 3px solid #e4e4e4;
+    border-bottom: none;
+    background-color: #fbfbfb;
+    color: #222;
+}
+#return:checked ~ .label_box .tab02 {
+    border: 3px solid #e4e4e4;
+    border-bottom: none;
+    background-color: #fbfbfb;
+    color: #222;
+}
+
+#delivery:checked ~ .sheet .sheet_01 {
+    display: block;
+}
+#return:checked ~ .sheet .sheet_02 {
+    display: block;
+}
+
+
+
+
+
+.footer_menu_side {
+    width: 1278px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_menu_side ul {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.footer_menu_side ul li {
+    color: gray;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+}
+
+.footer_menu_side ul li::after {
+    content: "·";
+    display: inline-block;
+    padding: 0 20px;
+    background-color: none;
+}
+.footer_menu_side ul .last::after {
+    display: none;
+}
+
+.footer_menu_side ul .on {
+    font-weight: 500;
+    color: #222;
+}
+
+
+.footer_menu_side .sns_box a {
+    font-size: 30px;
+    line-height: 30px;
+    color: #222;
+    padding: 0 5px 35px;
+    /* border: 1px solid #333; */
+}
+
+
+.footer_text {
+    display: flex;
+    justify-content: space-between;
+    width: 1278px;
+    margin: 0 auto;
+    font-size: 13px;
+    line-height: 20px;
+    color: gray;
+    padding: 30px 0;
+}
+
+.footer_text>div {
+    width: 200px;
+}
+.footer_text>div img {
+    width: 100%;
+}
+
+.footer_copyright {
+    border-top: 1px solid #e4e4e4;
+    text-align: center;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 20px 0;
+    color: gray;
+}

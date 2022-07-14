@@ -11,7 +11,7 @@ const swiper = new Swiper(".sheet_01 .hot_2022_swiper_ind", {
 });
 // 
 
-let swiper2 = new Swiper(".sheet_01 .hot_2022_swiper", {
+const swiper2 = new Swiper(".sheet_01 .hot_2022_swiper", {
     spaceBetween: 3,
     navigation: {
         nextEl: ".swiper-button-next",
@@ -26,7 +26,8 @@ let swiper2 = new Swiper(".sheet_01 .hot_2022_swiper", {
 });
 
 
-const swiper02_1 = new Swiper(".sheet_02 .hot_2022_swiper_ind", {
+// const swiper02_1 = new Swiper(".sheet_02 .hot_2022_swiper_ind", {
+new Swiper('.sheet_02 .hot_2022_swiper_ind', {
     spaceBetween: 10,   // 공간사이
     slidesPerView: 5,
     freeMode: true,
@@ -37,7 +38,8 @@ const swiper02_1 = new Swiper(".sheet_02 .hot_2022_swiper_ind", {
 });
 // 
 
-const swiper02_2 = new Swiper(".sheet_02 .hot_2022_swiper", {
+// const swiper02_2 = new Swiper(".sheet_02 .hot_2022_swiper", {
+new Swiper(".sheet_02 .hot_2022_swiper", {
     spaceBetween: 3,
     navigation: {
         nextEl: ".swiper-button-next",
@@ -50,3 +52,37 @@ const swiper02_2 = new Swiper(".sheet_02 .hot_2022_swiper", {
         delay: 8000,
     },
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const brands_swiper = new Swiper('.slide_box .swiper', {
+new Swiper('.slide_box .swiper', {
+    // Optional parameters
+    // direction: 'vertical',
+    loop: true,
+    slidesPerView: 6,
+    speed: 10000,
+    
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.slide_box .swiper-button-next',
+      prevEl: '.slide_box .swiper-button-prev',
+    },
+    autoplay: {
+        // delay: 9000,
+        delay: 0,
+        waitForTransition: false,
+    },
+  });

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>koke</title>
     
+    <!--제이쿼리-->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+
     <!--스와이퍼-->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
@@ -15,6 +18,10 @@
     
     <!--XEICON-->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!--YTPlayer-->
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <script src="./js/jquery.mb.YTPlayer.min.js" defer></script>
 
 
     <link rel="stylesheet" href="./css/hot_2022.css">
@@ -200,6 +207,8 @@
                             다양한 취향을 가진 사람들이 구독중인 코케</p>
                     </div>
                 </div>
+
+                <div class="swiper-pagination"></div>
 
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
@@ -604,10 +613,327 @@
             </div>
 
         </div>
+
+        <div class="roastery_brands">
+
+            <div class="text_box">
+                <h3>ROASTERY</h3>
+                <h4>더 다양한 로스터리<br>원두를 즐겨보세요</h4>
+            </div>
+
+            <div class="slide_box">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="img_box"><img src="./imags/mian/logo_06.jpg" alt=""></div>
+                        <h4 class="title">55º커피</h4>
+                      </div><!--swiper-slide-->
+                      <div class="swiper-slide">
+                        <div class="img_box"><img src="./imags/mian/logo_07.png" alt=""></div>
+                        <h4 class="title">알렉스더커피</h4>
+                      </div><!--swiper-slide-->
+                      <div class="swiper-slide">
+                        <div class="img_box"><img src="./imags/mian/logo_12.png" alt=""></div>
+                        <h4 class="title">웨이브온 커피</h4>
+                      </div><!--swiper-slide-->
+                      <div class="swiper-slide">
+                        <div class="img_box"><img src="./imags/mian/logo_13.png" alt=""></div>
+                        <h4 class="title">폰트커피</h4>
+                      </div><!--swiper-slide-->
+                      <div class="swiper-slide">
+                        <div class="img_box"><img src="./imags/mian/logo_08.png" alt=""></div>
+                        <h4 class="title">커넥츠커피</h4>
+                      </div><!--swiper-slide-->
+                      <div class="swiper-slide">
+                        <div class="img_box"><img src="./imags/mian/logo_11.png" alt=""></div>
+                        <h4 class="title">차군커피</h4>
+                      </div><!--swiper-slide-->
+                      <div class="swiper-slide">
+                        <div class="img_box"><img src="./imags/mian/logo_01.jpg" alt=""></div>
+                        <h4 class="title">에티오피아</h4>
+                      </div><!--swiper-slide-->
+                      <div class="swiper-slide">
+                        <div class="img_box"><img src="./imags/mian/logo_02.png" alt=""></div>
+                        <h4 class="title">에티오피아</h4>
+                      </div><!--swiper-slide-->
+                      <div class="swiper-slide">
+                        <div class="img_box"><img src="./imags/mian/logo_03.png" alt=""></div>
+                        <h4 class="title">에티오피아</h4>
+                      </div><!--swiper-slide-->
+                      <div class="swiper-slide">
+                        <div class="img_box"><img src="./imags/mian/logo_04.png" alt=""></div>
+                        <h4 class="title">에티오피아</h4>
+                      </div><!--swiper-slide-->
+                      <div class="swiper-slide">
+                        <div class="img_box"><img src="./imags/mian/logo_05.png" alt=""></div>
+                        <h4 class="title">에티오피아</h4>
+                      </div><!--swiper-slide-->
+                      <div class="swiper-slide">
+                        <div class="img_box"><img src="./imags/mian/logo_09.jpg" alt=""></div>
+                        <h4 class="title">에티오피아</h4>
+                      </div><!--swiper-slide-->
+                      <div class="swiper-slide">
+                        <div class="img_box"><img src="./imags/mian/logo_10.jpg" alt=""></div>
+                        <h4 class="title">에티오피아</h4>
+                      </div><!--swiper-slide-->
+                    </div>
+                    
+                </div><!--swiper-->
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div><!--slide_box-->
+
+        </div><!--roastery_brands-->
         
         
 
     </section>
+
+
+    <section class="brand_video">
+        <div class="brand_video_inner">
+
+            <div class="text_box">
+                <h2>Good coffee collector</h2>
+                <p>코케는<br>
+                    좋은 커피를 수집하는 Good coffee collector 입니다.<br>
+                    <br>
+                    당신의 기록이 차곡차곡 쌓여<br>
+                    취향이 되는 즐거움을 함께 하며,<br>
+                    커피로 당신의 일상에<br>
+                    특별함이 더해지는 순간을 기대합니다.
+                </p>
+            </div>
+            <div class="video_box" id="Video" data-property="{}"></div>
+
+        </div>
+    </section>
+
+
+    <section class="brand_review">
+        <h2>REVIEW</h2>
+        <h3>코케 고객님들의 소중한 리뷰를 읽어보세요.</h3>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide01">
+                    <div class="img_box">
+                        <!-- <img src="./imags/mian/review_01.jpg" alt=""> -->
+                        <div class="label">
+                            <div class="label_text">
+                                <p>Best<br>Review</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h2>[영앤도터스] 룰라바이</h2>
+                        <h3><p>eddf***님의 후기</p><p>★★★★★</p></h3>
+                        <p>다양한 원두를 입맛대로 골라 먹을 수 있어 정말 좋아요~</p>
+                    </div>
+                </div><!--swiper-slide-->
+                <div class="swiper-slide slide02">
+                    <div class="img_box">
+                        <!-- <img src="./imags/mian/review_02.jpg" alt=""> -->
+                        <div class="label">
+                            <div class="label_text">
+                                <p>Best<br>Review</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h2>[영앤도터스] 룰라바이</h2>
+                        <h3><p>eddf***님의 후기</p><p>★★★★★</p></h3>
+                        <p>다양한 원두를 입맛대로 골라 먹을 수 있어 정말 좋아요~</p>
+                    </div>
+                </div><!--swiper-slide-->
+                <div class="swiper-slide slide03">
+                    <div class="img_box">
+                        <!-- <img src="./imags/mian/review_03.jpg" alt=""> -->
+                        <div class="label">
+                            <div class="label_text">
+                                <p>Best<br>Review</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h2>[영앤도터스] 룰라바이</h2>
+                        <h3><p>eddf***님의 후기</p><p>★★★★★</p></h3>
+                        <p>다양한 원두를 입맛대로 골라 먹을 수 있어 정말 좋아요~</p>
+                    </div>
+                </div><!--swiper-slide-->
+                <div class="swiper-slide slide04">
+                    <div class="img_box">
+                        <!-- <img src="./imags/mian/review_04.jpg" alt=""> -->
+                        <div class="label">
+                            <div class="label_text">
+                                <p>Best<br>Review</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h2>[영앤도터스] 룰라바이</h2>
+                        <h3><p>eddf***님의 후기</p><p>★★★★★</p></h3>
+                        <p>다양한 원두를 입맛대로 골라 먹을 수 있어 정말 좋아요~</p>
+                    </div>
+                </div><!--swiper-slide-->
+                <div class="swiper-slide slide05">
+                    <div class="img_box">
+                        <!-- <img src="./imags/mian/review_05.jpg" alt=""> -->
+                        <div class="label">
+                            <div class="label_text">
+                                <p>Best<br>Review</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h2>[영앤도터스] 룰라바이</h2>
+                        <h3><p>eddf***님의 후기</p><p>★★★★★</p></h3>
+                        <p>다양한 원두를 입맛대로 골라 먹을 수 있어 정말 좋아요~</p>
+                    </div>
+                </div><!--swiper-slide-->
+                <div class="swiper-slide slide06">
+                    <div class="img_box">
+                        <!-- <img src="./imags/mian/review_06.jpg" alt=""> -->
+                        <div class="label">
+                            <div class="label_text">
+                                <p>Best<br>Review</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h2>[영앤도터스] 룰라바이</h2>
+                        <h3><p>eddf***님의 후기</p><p>★★★★★</p></h3>
+                        <p>다양한 원두를 입맛대로 골라 먹을 수 있어 정말 좋아요~</p>
+                    </div>
+                </div><!--swiper-slide-->
+                <div class="swiper-slide slide07">
+                    <div class="img_box">
+                        <!-- <img src="./imags/mian/review_07.jpg" alt=""> -->
+                        <div class="label">
+                            <div class="label_text">
+                                <p>Best<br>Review</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <h2>[영앤도터스] 룰라바이</h2>
+                        <h3><p>eddf***님의 후기</p><p>★★★★★</p></h3>
+                        <p>다양한 원두를 입맛대로 골라 먹을 수 있어 정말 좋아요~</p>
+                    </div>
+                </div><!--swiper-slide-->
+                
+            </div><!--swiper-wrapper-->
+
+            <div class="swiper_tool">
     
+                <div class="button-prev"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="number-pagination"></div>
+                <div class="button-next"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+        </div><!--swiper-->
+          
+        
+          
+
+    </section>
+    
+
+
+    <footer class="footer">
+
+        <div class="footer_menu">
+            <div class="footer_menu_inner">
+
+                <div class="cs_center">
+                    <h5>cs center</h5>
+                    <p class="call">070-4647-1868</p>
+                    <p>오전 10:00 ~ 오후 7:00<br>
+                        점심시간 : 오후 12:00 ~ 2:00<br>
+                        토 / 일 / 공휴일 휴무
+                    </p>
+                </div><!--cs_center-->
+
+                <div class="store_guide">
+                    <h5>store guide</h5>
+
+                    <div class="metapo_box">
+                        <div class="help">
+                            <i class="xi-microphone-o"></i>
+                            <p>HELP</p>
+                            <div>고객센터</div>
+                        </div>
+                        <div class="order">
+                            <i class="xi-box"></i>
+                            <p>ORDER</p>
+                            <div>배송조회</div>
+                        </div>
+                        <div class="qna">
+                            <i class="xi-forum-o"></i>
+                            <p>Q & A</p>
+                            <div>상품문의</div>
+                        </div>
+                        <div class="review">
+                            <i class="xi-comment-o"></i>
+                            <p>REVIEW</p>
+                            <div>상품후기</div>
+                        </div>
+                    </div>
+                </div><!--store_guide-->
+
+                <div class="return_exchange">
+                    <h5>return · exchange</h5>
+
+                    <input type="radio" id="delivery" name="exchange" checked>
+                    <input type="radio" id="return" name="exchange">
+
+                    <div class="label_box">
+                        <label for="delivery" class="tab01">배송/택배</label>
+                        <label for="return" class="tab02">교환/반품</label>
+                    </div>
+
+                    <div class="sheet">
+                        <div class="sheet_01">
+                            <p>택배 : 로젠택배 : 1588-9988</p>
+                            <p>월~금 08:00~18:00 / 토 09:00~13:00</p>
+                            <div class="button"><a href="#!">택배사 바로가기</a></div>
+                        </div>
+                        <div class="sheet_02">
+                            <p>주소:서울 강남구 테헤란로2길 27 페스트파이브 빌딩 9층 915호</p>
+                            <p>고객센터로 문의해주세요.</p>
+                        </div>
+                    </div>
+                </div><!--return_exchange-->
+
+            </div><!--footer_menu_inner-->
+            <div class="footer_menu_side">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT US</li>
+                    <li>AGREEMENT</li>
+                    <li class="on">PRIVACY POLICY</li>
+                    <li>STORE GUIDE</li>
+                    <li class="last">CS CENTER</li>
+                </ul>
+                <div class="sns_box">
+                    <a href="#!"><i class="xi-kakaotalk"></i></a>
+                    <a href="#!"><i class="xi-instagram"></i></a>
+                </div>
+            </div><!--footer_menu_side-->
+        </div><!--footer_menu-->
+
+        <div class="footer_text">
+            <P><span style="color: #222;">(주)컨슈머브릿지</span> 대표: 신재현, 박성환 | 개인정보보호책임자: 신재현 | 사업자등록번호: 713-86-01467 | 통신판매업신고번호: 제2021-서울강남-02469호<br>
+                사업장소재지: 서울 강남구 테헤란로2길 27 패스트파이브 빌딩 9층 915호<br>
+                주식회사 컨슈머브릿지는 전자상거래 등에서의 소비자보호에 관한 법률에 따른 통신판매중개자로서 중개하는 통신판매에 관하여서는 통신판매의 당사자가 아니며<br>
+                상품의 주문, 배송 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.</P>
+            <div><a href="index.html"><img src="./imags/mian/koke_logo.png" alt=""></a></div>
+        </div><!--footer_text-->
+
+        <div class="footer_copyright">
+            <p>© 2021 Consumer Bridge, Inc. All rights reserved</p>
+        </div><!--footer_copyright-->
+    </footer>
 </body>
 </html>
