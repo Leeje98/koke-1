@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,11 +23,16 @@
     <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
     <script src="./js/jquery.mb.YTPlayer.min.js" defer></script>
 
+    <!--ScrollMagic-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" ></script>
 
-    <link rel="stylesheet" href="./css/hot_2022.css">
+
+    <link rel="stylesheet" href="./css/basics.css">
     <link rel="stylesheet" href="./css/index.css">
-    <script src="./js/hot_2022.js" defer></script>
+    <link rel="stylesheet" href="./css/hot_2022.css">
+    <script src="./js/basics.js" defer></script>
     <script src="./js/index.js" defer></script>
+    <script src="./js/hot_2022.js" defer></script>
     
     
 
@@ -58,17 +63,21 @@
 
         <div class="Lnb_box">
             <ul class="lnb">
-                <li><i class="fa-solid fa-bars"></i></li>
+                <li class="AllMenu"><i class="fa-solid fa-bars"></i></li>
                 <li class="brand">브랜드 검색 <p>|</p></li>
-                <li>모든커피</li>
+                <li class="coffee">모든커피</li>
                 <li class="point">내 커피 취향테스트</li>
-                <!-- <li><div class="logo_box"><a href="#!"><img src="./imags/mian/koke_logo.png" alt=""></a></div></li> -->
+                <!-- <li><div class="logo_box"><a href="./index.html"><img src="./imags/mian/koke_logo.png" alt=""></a></div></li> -->
                 <li>싱글오리진</li>
                 <li>블렌드</li>
                 <li>구독하기</li>
-                <li class="seash_li"><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li class="seash_li">
+                    <input type="text" class="lnb_seash" id="Lnb_seash">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
 
-                <div class="logo_box"><a href="#!"><img src="./imags/mian/koke_logo.png" alt=""></a></div>
+                <div class="logo_box"><a href="./index.html"><img src="./imags/mian/koke_logo.png" alt=""></a></div>
+                <!-- <div class="logo_box_bg"><a href="#!"><img src="./imags/mian/koke_logo.png" alt=""></a></div> -->
 
             </ul>
 
@@ -120,7 +129,7 @@
                         </ul>
                     </li>
                 </ul>
-            </div><!--sheet_All-->
+            </div><!-- sheet_All -->
 
             <div class="sheet_brand">
                 <div class="sheet_brand_inner">
@@ -207,18 +216,14 @@
                             다양한 취향을 가진 사람들이 구독중인 코케</p>
                     </div>
                 </div>
-
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <button><a href="#!">내 취향 커피 추천 받기 →</a></button>
+                
+            </div><!--swiper-->
             
-            </div>
+            <div class="visual-button-prev"><i class="xi-angle-up"></i></div>
+            <div class="visual-button-next"><i class="xi-angle-down"></i></div>
 
+            <button><a href="#!">내 취향 커피 추천 받기 →</a></button>
             
-
     </section>
 
 
@@ -400,9 +405,9 @@
         <div class="sub_banner_box">
             <img src="./imags/mian/main_banner.jpg" alt="">
         </div>
-        <div class="text_box">
-            <h2>내 입맛에 꼭 맞는 커피로 추천받고 구독하세요</h2>
-            <h3>내 취향에 딱 맞는 원두를 추천해요.<br>구독을 시작하고 항상 무료 배송으로 받아보세요.</h3>
+        <div class="text_box scroll_el">
+            <h2 class="origin position_bottom delay_00">내 입맛에 꼭 맞는 커피로 추천받고 구독하세요</h2>
+            <h3 class="origin position_bottom delay_01">내 취향에 딱 맞는 원두를 추천해요.<br>구독을 시작하고 항상 무료 배송으로 받아보세요.</h3>
             <button><a href="#!">30초만에 커피 추천받기 →</a></button>
         </div>
     </section>
@@ -693,11 +698,11 @@
 
 
     <section class="brand_video">
-        <div class="brand_video_inner">
+        <div class="brand_video_inner scroll_el">
 
-            <div class="text_box">
-                <h2>Good coffee collector</h2>
-                <p>코케는<br>
+            <div class="text_box scroll_el">
+                <h2 class="origin position_left delay_00">Good coffee collector</h2>
+                <p class="origin position_left delay_01">코케는<br>
                     좋은 커피를 수집하는 Good coffee collector 입니다.<br>
                     <br>
                     당신의 기록이 차곡차곡 쌓여<br>
@@ -928,7 +933,7 @@
                 사업장소재지: 서울 강남구 테헤란로2길 27 패스트파이브 빌딩 9층 915호<br>
                 주식회사 컨슈머브릿지는 전자상거래 등에서의 소비자보호에 관한 법률에 따른 통신판매중개자로서 중개하는 통신판매에 관하여서는 통신판매의 당사자가 아니며<br>
                 상품의 주문, 배송 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.</P>
-            <div><a href="index.html"><img src="./imags/mian/koke_logo.png" alt=""></a></div>
+            <div><a href="./index.html"><img src="./imags/mian/koke_logo.png" alt=""></a></div>
         </div><!--footer_text-->
 
         <div class="footer_copyright">

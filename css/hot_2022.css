@@ -1,9 +1,4 @@
-* {margin: 0; padding: 0; 
-    font-family: 'Noto Sans KR', sans-serif;
-}
-img {display: block;}
-a {text-decoration: none;}
-li {list-style: none;}
+
 
 
 .outer_box .sheet_box .sheet {
@@ -241,6 +236,7 @@ li {list-style: none;}
     right: 0px;
     top: 10%;
     background-color: #fff;
+    z-index: 5;
 }
 .slide_box .swiper-button-prev {
     position: absolute;
@@ -250,4 +246,5 @@ li {list-style: none;}
     left: 0px;
     top: 10%;
     background-color: #fff;
+    z-index: 5;
 }

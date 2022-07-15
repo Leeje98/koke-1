@@ -2,6 +2,8 @@
 
 $(function(){
 
+
+
   jQuery("#Video").YTPlayer({
       videoURL:'WF4jHGcZtT0',                   // 동영상주소
       containment:'.video_box',                   // 선택자 (동영상 삽입할 클래스명)
@@ -11,9 +13,18 @@ $(function(){
       opacity:1,                                // 불투명도
       showControls: false,                      // 영상 컨트롤(재생바 등) 표시여부
       playOnlyIfVisible: true                   // 해당 화면 밖에 있을때, 일시 중지 
-  });
+  }); // YTPlayer
+
+
+
+
 
 })
+
+
+
+
+
 
 
 const mainVisualSwiper = new Swiper('.main_visual .swiper', {
@@ -29,8 +40,8 @@ const mainVisualSwiper = new Swiper('.main_visual .swiper', {
   
     // Navigation arrows
     navigation: {
-      nextEl: '.main_visual .swiper .swiper-button-next',
-      prevEl: '.main_visual .swiper .swiper-button-prev',
+      nextEl: '.main_visual .visual-button-next',
+      prevEl: '.main_visual .visual-button-prev'
     },
   
     autoplay: {
@@ -39,6 +50,26 @@ const mainVisualSwiper = new Swiper('.main_visual .swiper', {
     
   });
   // main_visual 텍스트 슬라이드
+
+
+
+
+
+const scrollEls = document.querySelectorAll('.scroll_el')
+
+scrollEls.forEach((scrollEl) => {
+  new ScrollMagic
+    .Scene({       // 감지할 위치 
+      triggerElement: scrollEl,   // 감지할 대상
+      triggerHook: 0.7 // 화면 높이를 0에서 1로 봤을때 0.7쯤 오면 이벤트를 일으키기 위해 Hook이라는 고리를 걸어놓고 감지하게 한다 (0.7이나 0.8이 제일 많이 쓰인다)
+    })
+    .setClassToggle(scrollEl, 'show')
+    .addTo(new ScrollMagic.Controller())
+})
+// ScrollMagic       -- sub_banner  -- brand_video
+
+
+
 
 
 
@@ -68,4 +99,4 @@ const mainVisualSwiper = new Swiper('.main_visual .swiper', {
       type: 'fraction',
     },
   });
-  // brand_review 
+  // brand_review // REVIEW
