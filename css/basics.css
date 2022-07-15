@@ -118,6 +118,7 @@ button:hover a {
     color: white;
 }
 
+
 .Lnb_box {
     border-bottom: 1px solid #ddd;
     box-sizing: border-box;
@@ -126,85 +127,92 @@ button:hover a {
 
 .Lnb_box .lnb {
     display: flex;
+    justify-content: space-between;
     width: 1278px;
     height: 50px;
     margin: 0 auto;
-    justify-content: space-between;
     position: relative;
 }
 
+.Lnb_box .lnb li ul {
+    flex: 1;
+    display: flex;
+    /* width: 50%; */
 
-.Lnb_box .lnb .AllMenu {
+    border: 1px solid #333;
+}
+
+
+
+
+
+
+
+
+/*
+.Lnb_box .lnb li ul .AllMenu {
     text-align: start;
 }
 
 
-.Lnb_box .lnb li {
+.Lnb_box .lnb li ul li {
     flex: 1;
     text-align: center;
 }
 
-.Lnb_box .lnb li .fa-bars {
+.Lnb_box .lnb li ul li .fa-bars {
     font-size: 20px;
 }
-.Lnb_box .lnb .coffee {
+.Lnb_box .lnb li ul .coffee {
     padding: 0 30px;
 }
-.Lnb_box .lnb .brand {
+.Lnb_box .lnb li ul .brand {
     position: relative;
     padding-right: 30px;
 }
-.Lnb_box .lnb .brand p {
+.Lnb_box .lnb li ul .brand p {
     position: absolute;
     right: 0px;
     top: 0;
 }
 
-.Lnb_box .lnb .point {
+.Lnb_box .lnb li ul .point {
     margin-right: 300px;
     flex: 1.3;
 }
 
-/* .Lnb_box .lnb .brand::after {
-    content: "";
-    display: inline-block;
-    background-color: #333;
-    width: 1px;
-    height: 30px;
-    vertical-align: middle;
-    margin-left: 70px;
-} */
 
 
-.Lnb_box .lnb li {
+.Lnb_box .lnb li ul li {
     line-height: 50px;
 }
 
-.Lnb_box .lnb .seash_li {
+.Lnb_box .lnb li ul .seash_li {
     margin-left: 40px;
     flex: 1.5;
 }
 
-.Lnb_box .lnb .seash_li i {
+.Lnb_box .lnb li ul .seash_li i {
     cursor: pointer;
 }
 
-.Lnb_box .lnb .seash_li .lnb_seash {
+.Lnb_box .lnb li ul .seash_li .lnb_seash {
     width: 0;
     border: none;
     border-bottom: 1px solid #ccc;
     transition: 0.5s;
     outline: none;
 }
+*/
 
 
 .Lnb_box .lnb .logo_box {
     position: absolute;
     width: 150px;
     top: 20px;
-    /* left: 44%; */
-    left: 560px;
-    transform: translateX(-50%);
+    /* left: 50%; */
+    /* left: 534px; */
+    left: 515px;
     transform: translateY(-50%);
     border: 30px solid white;
     border-radius: 50%;
