@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>koke</title>
+
+    <!--제이쿼리-->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+
+    <!--스와이퍼-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/2c083cd22c.js" crossorigin="anonymous" defer></script>
+    
+    <!--XEICON-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!--YTPlayer-->
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <script src="./js/jquery.mb.YTPlayer.min.js" defer></script>
+
+    <!--ScrollMagic-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" ></script>
+
+
+    <link rel="stylesheet" href="./css/basics.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <script src="./js/basics.js" defer></script>
+    <script src="./js/detail.js" defer></script>
+
+
+</head>
+
+<body>
+
+    <div class="wrap">
+        
+        <ul class="navigation">
+            <li><a href="./index.html">홈</a></li>
+            >
+            <li><a href="./sub.html">모든커피</a></li>
+            >
+            <li><a href="./detail.html">스프링 블렌드</a></li>
+        </ul>
+            
+            
+        
+
+        <section class="main_box">
+
+            <div class="img_container">
+                <div class="main_img">
+                    <img src="./imags/detail/thumbnail_01.JPG" alt="">
+                </div>
+                <div class="thum_img_outer">
+                    <div class="logo_box">
+                        <div class="logo_img"><img src="./imags/detail/logo.jpg" alt=""></div>
+                        <p>콩볶는 사람들</p>
+                    </div>
+                    <div class="thum_img_box">
+                        <img src="./imags/detail/thumbnail_01.JPG" alt="">
+                        <img src="./imags/detail/thumbnail_02.JPG" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="option_container">
+                <h3>스프링 블렌드</h3>
+                <p>#밀크초코 은은함</p>
+
+                <input type="radio" name="choice" id="choice1" checked>
+                <input type="radio" name="choice" id="choice2">
+
+                <div class="Purchase_choice">
+                    <div class="bg_move"></div>
+                    <label for="choice1" class="choice_01">한번만 구매하기</label>
+                    <label for="choice2" class="choice_02">구독하기</label>
+                </div>
+
+                <div class="information_text">
+                    <div class="box01">
+                        <p class="title">판매가</p>
+                        <p>4,000원</p>
+                    </div>
+                    <div class="box02">
+                        <p class="title">구매혜택</p>
+                        <p><span class="mileage">M</span>적립 마일리지 : +200원</p>
+                    </div>
+                    <div class="box03">
+                        <p class="title">제조사</p>
+                        <p>(주)콩볶는 사람들</p>
+                    </div>
+                    <div class="box04">
+                        <p class="title">원산지</p>
+                        <p>브라질, 콜롬비아, 에티오피아</p>
+                    </div>
+                    <div class="box05">
+                        <p class="title">구성품</p>
+                        <p>스프링 블렌드 (200g, 500g, 1kg)</p>
+                    </div>
+                </div><!--information_text-->
+
+                <div class="option_choice_box">
+                    <div class="option_choice option_choice_01">
+                        <p class="title">원두 용량</p>
+
+                        <input type="radio" name="capacity" id="capacity_200" checked>
+                        <input type="radio" name="capacity" id="capacity_400">
+                        <input type="radio" name="capacity" id="capacity_1000">
+
+                        <div class="label_box">
+                            <label for="capacity_200" class="Capacity_200">200g</label>
+                            <label for="capacity_400" class="Capacity_400">400g</label>
+                            <label for="capacity_1000" class="Capacity_1000">1kg</label>
+                        </div>
+                    </div><!--option_choice_01-->
+                    <div class="option_choice option_choice_02">
+                        <p class="title">분쇄 선택</p>
+
+                        <input type="radio" name="Crushing" id="Crushing_01" checked>
+                        <input type="radio" name="Crushing" id="Crushing_02">
+                        <input type="radio" name="Crushing" id="Crushing_03">
+                        <input type="radio" name="Crushing" id="Crushing_04">
+                        <input type="radio" name="Crushing" id="Crushing_05">
+                        <input type="radio" name="Crushing" id="Crushing_06">
+
+                        <div class="label_box">
+                            <label for="Crushing_01" class="crushing_001">홀빈(분쇄안함)</label>
+                            <label for="Crushing_02" class="crushing_002">커피 메이커</label>
+                            <label for="Crushing_03" class="crushing_003">에스프레소 머신</label>
+                            <label for="Crushing_04" class="crushing_004">프렌치 프레스</label>
+                            <label for="Crushing_05" class="crushing_005">핸드 드립</label>
+                            <label for="Crushing_06" class="crushing_006">모카포트</label>
+                        </div>
+                    </div><!--option_choice_02-->
+
+                    <div class="option_choice option_choice_03">
+                        <p class="title">구독하기</p>
+
+                        <input type="radio" name="Subscription" id="subscription_01" checked>
+                        <input type="radio" name="Subscription" id="subscription_02">
+                        <input type="radio" name="Subscription" id="subscription_03">
+                        <input type="radio" name="Subscription" id="subscription_04">
+
+                        <div class="label_box">
+                            <label for="subscription_01" class="scription_001">매주</label>
+                            <label for="subscription_02" class="scription_002">2주</label>
+                            <label for="subscription_03" class="scription_003">3주</label>
+                            <label for="subscription_04" class="scription_004">4주</label>
+                        </div>
+                    </div><!--option_choice_03-->
+                </div><!--option_choice_box-->
+
+                <div class="button_box">
+                    <button class="cart">장바구니</button>
+                    <button class="order">구매하기</button>
+                    <div class="heart">
+                        <i class="xi-heart-o" onclick="on()"></i>
+                        <i class="xi-heart" onclick="off()"></i>
+                        <div class="speech_bubble">찜하기</div>
+                    </div>
+                </div>
+                
+            </div><!--option_container-->
+            
+        </section><!--main_box-->
+
+        <section id="Details">
+
+            <div class="tab_nav tab_nav_01">
+                <ul>
+                    <li class="li_01 on"><a href="#Details">상품상세정보</a></li>
+                    <li class="li_02"><a href="#Shipping">배송안내</a></li>
+                    <li class="li_03"><a href="#Review">상품후기</a></li>
+                    <li class="li_04"><a href="#Inquiry">상품문의</a></li>
+                </ul>
+            </div>
+
+            <div class="Details_box">
+                <img src="./imags/detail/Detaile_page_01.JPG" alt="">
+                <img src="./imags/detail/Detaile_page_02.JPG" alt="">
+
+                <div class="filter"></div>
+
+                <input type="checkbox" id="DetailsBtn">
+                <label for="DetailsBtn" class="De_btn" onclick="Event()">
+                    상세정보 더보기<i class="xi-angle-down-min"></i>
+                </label>
+                    
+                <!-- <button id="Toggle_Btn" class="Toggle_Btn" onclick="BtnEvent()">상세정보 더보기
+                    <i class="xi-angle-down-min"></i>
+                </button> -->
+            </div>
+
+        </section><!--Details--> 
+
+        <section id="Shipping"> 
+            <div class="tab_nav tab_nav_02">
+                <ul>
+                    <li class="li_01"><a href="#Details">상품상세정보</a></li>
+                    <li class="li_02 on"><a href="#Shipping">배송안내</a></li>
+                    <li class="li_03"><a href="#Review">상품후기</a></li>
+                    <li class="li_04"><a href="#Inquiry">상품문의</a></li>
+                </ul>
+            </div>
+
+            <div class="Shipping_box">
+                <h3>배송안내</h3>
+                <ul>
+                    <li>
+                        <div class="title">당일 출고안내</div>
+                        <div class="text">
+                            원두커피의 경우 신선한 원두공급을 위해 오후 3시까지 입금 확인된 주문건에 한해 당일 로스팅 후 당일 출고됩니다.<br>
+                            수제과일청의 경우 신선도를 위해 오후 3시까지 입금 확인된 주문건에 한해 당일 제조 후 당일 출고됩니다. (1/2/4kg은 당일발송 제외)
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">배송안내</div>
+                        <div class="text">
+                            1. 오후 3시까지 입금 확인된 주문건만 당일 로스팅됩니다.<br>
+                            2. 토, 일요일 및 공휴일 주문건은 다음날 로스팅 후 발송됩니다.<br>
+                            3. 배송은 출고일부터 1~3일 소요 될 수 있습니다.<br>
+                            4. 제주, 도서 산간 지역은 추가요금이 발생 할 수 있습니다.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">원두커피 교환/반품</div>
+                        <div class="text">
+                            갓 볶은 원두커피는 제조식품으로 교환 및 환불이 불가한 상품입니다.<br>
+                            <br>
+                            (다음 사항은 교환, 환불이 불가능하오니 양해 부탁드립니다.)<br>
+                            → 주문시 분쇄옵션사항 선택을 잘못한 경우<br>
+                            → 기호에 의한 고객님의 단순변심<br>
+                            단, 제품의 하자로 인한 교환 및 환불은 가능합니다.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">커피용품 교환/반품</div>
+                        <div class="text">
+                            → 상품 수령 후 7일이내에 교환, 반품이 가능합니다. 단, 포장을 개봉하여 사용하거나 훼손되었을 경우에는 반품이 불가합니다.<br>
+                            → 구매자 변심으로 인한 교환/반품의 경우 왕복 택배비는 고객님이 부담하셔야 합니다. (무료배송상품도 동일)<br>
+                            → 제품하자나 오배송 등에 의한 교환/반품의 경우에는 별도의 배송금액이 발생하지 않습니다.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">주의사항</div>
+                        <div class="text">
+                            →고객님 부주의로 분쇄옵션사항을 잘못 선택하였을 경우 교환 및 환불이 불가능한점 양해 부탁드립니다.<br>
+                            →고객센터로 먼저 연락을 주시면 친절하게 교환 및 반품방법에 대해 안내 해드립니다.<br>
+                            →고객님 임의대로 반품, 교환 등을하여 제품을 보내실 경우, 제품이 유실되거나 처리기간이 길어질 수 있으니 꼭 고객센터(051-526-1183~4)로 먼저 연락을 주시면 감사하겠습니다.<br>
+                            <br>
+                            ※ 반품시 편의점 택배는 이용이 불가합니다.
+                        </div>
+                    </li>
+                    <p>배송업체: cj대한통운 / 배송비: 2,500원(3만원 이상 무료배송)</p>
+                </ul>
+            </div>
+
+        </section>
+
+        <section id="Review">
+            <div class="tab_nav tab_nav_03">
+                <ul>
+                    <li class="li_01"><a href="#Details">상품상세정보</a></li>
+                    <li class="li_02"><a href="#Shipping">배송안내</a></li>
+                    <li class="li_03 on"><a href="#Review">상품후기</a></li>
+                    <li class="li_04"><a href="#Inquiry">상품문의</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="Inquiry">
+            <div class="tab_nav tab_nav_04">
+                <ul>
+                    <li class="li_01"><a href="#Details">상품상세정보</a></li>
+                    <li class="li_02"><a href="#Shipping">배송안내</a></li>
+                    <li class="li_03"><a href="#Review">상품후기</a></li>
+                    <li class="li_04 on"><a href="#Inquiry">상품문의</a></li>
+                </ul>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div><!--warp-->
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
