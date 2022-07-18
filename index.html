@@ -26,6 +26,13 @@
     <!--ScrollMagic-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" ></script>
 
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <!-- 애니메이션 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+    <!-- 화면이동 -->
+
+
 
     <link rel="stylesheet" href="./css/basics.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -66,17 +73,17 @@
                 <li>
                     <ul class="lnb01">
                         <li class="AllMenu"><i class="fa-solid fa-bars"></i></li>
-                        <li class="brand">브랜드 검색 <p>|</p></li>
-                        <li class="coffee">모든커피</li>
-                        <li class="point">내 커피 취향테스트</li>
+                        <li class="brand">브랜드 검색<p style="display:inline-block">|</p></li>
+                        <li class="coffee"><a href="./sub.html">모든커피</a></li>
+                        <li class="point"><a href="#!">내 커피 취향테스트</a></li>
                     </ul>
                 </li>
                 <!-- <li><div class="logo_box"><a href="./index.html"><img src="./imags/mian/koke_logo.png" alt=""></a></div></li> -->
                 <li>
-                    <ul class="02">
-                        <li>싱글오리진</li>
-                        <li>블렌드</li>
-                        <li>구독하기</li>
+                    <ul class="lnb02">
+                        <li><a href="#!">싱글오리진</a></li>
+                        <li><a href="#!">블렌드</a></li>
+                        <li><a href="#!">구독하기</a></li>
                         <li class="seash_li">
                             <input type="text" class="lnb_seash" id="Lnb_seash">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -205,6 +212,76 @@
 
     </header>
 
+    <nav>
+        <div class="nav_inner">
+
+            <input type="checkbox" id="Quick_search_open_btn">
+            <div class="Quick_search_box Quick_button_box">
+                <label for="Quick_search_open_btn" class="Quick_search_open_btn_label"><i class="xi-search"></i></label>
+
+                <!-- <div class="search_sheet">
+                    <div class="search_sheet_inner">
+                        <label for="Quick_search_open_btn" class="search_sheet_close"><i class="xi-close"></i></label>
+
+                        <div class="search_box_outer"><input type="text" id="Quick_search"><button class="search_btn"><i class="xi-search"></i></button></div>
+                        <h4>인기 검색어</h4>
+                        <ul class="best_search">
+                            <li><a href="#!">바디워시</a></li>
+                            <li><a href="#!">디퓨져</a></li>
+                            <li><a href="#!">향수</a></li>
+                            <li><a href="#!">핸드크림</a></li>
+                            <li><a href="#!">선물</a></li>
+                            <li><a href="#!">데메테르 시그니처</a></li>
+                            <li><a href="#!">열쇠고리</a></li>
+                            <li><a href="#!">데메테르</a></li>
+                            <li><a href="#!">탄생화선물 에디션</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <div class="title_tag">검색</div>
+            </div><!--Quick_search_box-->
+            
+            <div class="Quick_cart_box Quick_button_box">
+                <a href="#!"><i class="xi-user"></i></a>
+                <div class="title_tag">마이페이지</div>
+            </div><!--Quick_delivery_box-->
+            
+            <div class="Quick_cart_box Quick_button_box">
+                <a href="#!"><i class="xi-cart"></i></a>
+                <div class="title_tag">장바구니</div>
+            </div><!--Quick_delivery_box-->
+
+            <div class="Quick_delivery_box Quick_button_box">
+                <a href="#!"><i class="xi-truck xi-flip-horizontal"></i></a>
+                <div class="title_tag">배송조회</div>
+            </div><!--Quick_delivery_box-->
+
+            <div class="Quick_clock_box Quick_button_box">
+                <a href="#!"><i class="xi-clock"></i></a>
+                <div class="title_tag">최근 본 상품</div>
+            </div><!--Quick_delivery_box-->
+            
+            <div class="Quick_top_box Quick_button_box Move">
+                <i class="xi-angle-up"></i>
+            </div><!--top_box-->
+            
+            <div class="Quick_bottom_box Quick_button_box Move">
+                <i class="xi-angle-down"></i>
+            </div><!--bottom_box-->
+
+        </div>
+    </nav>
+
+    <div class="floating_banner">
+        <div class="img_box">
+            <img src="./imags/mian/floating_banner.png" alt="">
+        </div>
+        <div class="text_box">
+            <p>취향 테스트 <span>GO</span><i class="xi-long-arrow-right"></i></p>
+        </div>
+    </div>
+
     <section class="main_visual">
             
             <div class="swiper">
@@ -299,13 +376,13 @@
                 </div>
                 <div class="text_box">
                     <h4>[커피몽타주]비터스윗 라이트 에디션2</h4>
-                    <h5>#밀키 & 은은한</h5>
+                    <h5>#쌉쌀 & 묵직한</h5>
                     <p class="Price">12,000원</p>
                 </div>
             </li>
             <li>
                 <div class="thumbnail">
-                    <img src="./imags/mian/best_04.jpg" alt="">
+                    <img src="./imags/sub/01_coffee_img_03.jpg" alt="">
 
                     <div class="thumbnail_logo">
                         <img src="./imags/mian/logo_02.png" alt="">
@@ -317,8 +394,8 @@
                 </div>
                 <div class="text_box">
                     <h4>[커피몽타주]센스 앤 센서빌리티</h4>
-                    <h5>#밀키 & 은은한</h5>
-                    <p class="Price">12,000원</p>
+                    <h5>#상큼 & 깔끔한</h5>
+                    <p class="Price">15,000원</p>
                 </div>
             </li>
         </ul>

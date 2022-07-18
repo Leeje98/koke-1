@@ -1,5 +1,29 @@
 
 
+button {
+    width: 300px;
+    height: 70px;
+    border-radius: 35px;
+    border: none;
+    background-color: #ff6c57;
+    margin: 0 auto;
+    transition: 0.1s;
+    cursor: pointer;
+}
+button:hover {
+    transform: scale(1.01);
+    width: 303px;
+    height: 73px;
+}
+
+button a {
+    font-size: 18px;
+    color: white;
+}
+button:hover a {
+    text-decoration: underline;
+}
+
 
 
 
@@ -13,7 +37,8 @@
     width: 99.8%;
     height: 920px;
     background-image: url(../imags/mian/main_visual.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     margin-bottom: 100px;
 
     transition: 0.5s;
@@ -24,17 +49,13 @@
     position: relative;
     width: 800px;
     height: 250px;
-    margin-top: 250px;
+    margin-top: 200px;
     text-align: center;
 
     /* background-color: aqua; */
 }
 
 .main_visual .swiper .swiper-wrapper .swiper-slide {
-    /* padding: 200px 0; */
-
-    /* border: 1px solid #333;
-    box-sizing: border-box; */
 }
 
 .main_visual .swiper .swiper-wrapper .swiper-slide h2 {
@@ -48,17 +69,18 @@
 .main_visual .visual-button-prev,
 .main_visual .visual-button-next {
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     color: #ddd;
     font-size: 50px;
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
+    /* background-color: aqua; */
 }
 
-.main_visual .visual-button-prev{top : 25%}
-.main_visual .visual-button-next{top : 75%}
+.main_visual .visual-button-prev{top : 20%}
+.main_visual .visual-button-next{top : 65%}
 
 .main_visual button {
     position: absolute;
@@ -123,6 +145,10 @@
 
 .product_coner .product_list {
     display: flex;
+}
+
+.product_coner .product_list li {
+    cursor: pointer;
 }
 
 .product_coner .product_list li .thumbnail {
