@@ -6,8 +6,12 @@ const topBannerCloseBtn = document.querySelector('.topBanner_inner .fa-xmark')
 topBannerCloseBtn.onclick = hiddenEvent
 
 function hiddenEvent() {
-  document.querySelector('.topBanner').style.height = '0'
-  document.querySelector('.main_visual').style.paddingTop = '100px'
+  document.querySelector('.topBanner').style.height = '0';
+  document.querySelector('.main_visual').style.paddingTop = '100px';
+
+  // document.querySelector('aside .filter').style.top = '100px';
+  document.querySelector('aside .filter').style.paddingTop = '0';
+  // document.getElementById('#FilterBox').style.paddingTop = '0';
 }
 // 탑배너 닫히게 하기
 
@@ -27,47 +31,12 @@ topBtn.addEventListener('click', () => {
 const downBtn = document.querySelector('.Quick_bottom_box')
 
 downBtn.addEventListener('click', () => {
-  gsap.to(window, 1, {
+  gsap.to(window, 2, {
     scrollTo: 7000
   })
 })
 /* down_btn */
 
-
-
-
-const quickMove = document.querySelectorAll('.Quick_button_box.Move')
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 200) {
-      gsap.to(quickMove, 0.3, {
-        opacity: 1
-      })
-    } else {
-        gsap.to(quickMove, 0.3, {
-          opacity: 0
-        })
-    }
-})
-/* top_btn, down_btn 200px 내려가면 보이는 효과*/
-
-
-
-
-const floating = document.querySelector('.floating_banner')
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 900) {
-    gsap.to(floating, 0.5, {
-      opacity: 1
-    })
-  } else {
-    gsap.to(floating, 0.5, {
-      opacity: 0
-    })
-  }
-})
-/* floating_banner 비주얼메인 지나치면 보이는 효과*/
 
 
 
@@ -129,5 +98,5 @@ searshBtn.addEventListener('blur', () => {
     searsh.style.width = '0'
     searsh.style.opacity = '0'
 })
-// 검색창 늘이고 줄이기
+// 클릭시 검색창 늘이기
 

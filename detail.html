@@ -23,8 +23,14 @@
     <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
     <script src="./js/jquery.mb.YTPlayer.min.js" defer></script>
 
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" defer></script>
+    <!-- 애니메이션 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js" defer></script>
+    <!-- 화면이동 -->
+
     <!--ScrollMagic-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" defer></script>
 
 
     <link rel="stylesheet" href="./css/basics.css">
@@ -36,6 +42,244 @@
 </head>
 
 <body>
+
+    <header class="header">
+
+        <div class="topBanner">
+            <div class="topBanner_inner">
+                <p>
+                    구독 시작하면 3,000원 즉시 할인 · 무료 교환 · 무료 배송                  
+                    <a href="#!">내 취향 커피 추천받기 <i class="fa-solid fa-angle-right"></i></a>
+                </p>
+                <i class="fa-solid fa-xmark"></i>
+                <!-- <i class="fa-light fa-xmark"></i> -->
+            </div>
+        </div><!--topBanner-->
+
+        <div class="Gnb_box">
+            <ul class="gnb">
+                <li>회원가입</li>
+                <li>로그인</li>
+                <li class="cart">장바구니<i class="fa-solid fa-bag-shopping"></i><div class="bacge">1</div></li>
+            </ul>
+        </div>
+
+        <div class="Lnb_box">
+            <ul class="lnb">
+                <li>
+                    <ul class="lnb01">
+                        <li class="AllMenu"><i class="fa-solid fa-bars"></i></li>
+                        <li class="brand">브랜드 검색<p style="display:inline-block">|</p></li>
+                        <li class="coffee"><a href="./sub.html">모든커피</a></li>
+                        <li class="point"><a href="#!">내 커피 취향테스트</a></li>
+                    </ul>
+                </li>
+                <!-- <li><div class="logo_box"><a href="./index.html"><img src="./imags/mian/koke_logo.png" alt=""></a></div></li> -->
+                <li>
+                    <ul class="lnb02">
+                        <li><a href="#!">싱글오리진</a></li>
+                        <li><a href="#!">블렌드</a></li>
+                        <li class="Subscription"><a href="#!">
+                            구독하기
+                            <div class="speech_bubble">무료배송</div>
+                        </a></li>
+                        <li class="seash_li">
+                            <input type="text" class="lnb_seash" id="Lnb_seash">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    </ul>
+                </li>
+                <li></li>
+                
+                <div class="logo_box"><a href="./index.html"><img src="./imags/mian/koke_logo.png" alt=""></a></div>
+                <!-- <div class="logo_box_bg"><a href="#!"><img src="./imags/mian/koke_logo.png" alt=""></a></div> -->
+
+            </ul>
+
+
+
+            <div class="sheet_All">
+                <ul>
+                    <li>
+                        <ul>
+                            <h3>전체메뉴</h3>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <h3>모든커피</h3>
+                            <li>브랜드</li>
+                            <li>싱글오리진</li>
+                            <li>블렌드</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <h3>내 입맛 커피</h3>
+                            <li>내 커피 취향 테스트</li>
+                            <li>구독하기</li>
+                            <li>구독후기</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <h3>커뮤니티</h3>
+                            <li>EVENT / NEWS</li>
+                            <li>REVIEW</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <h3>고객센터</h3>
+                            <li>NOTICE</li>
+                            <li>Q & A</li>
+                            <li>1:1 문의</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <h3>ABOUT AS</h3>
+                            <li>BRAND</li>
+                            <li>입점문의</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- sheet_All -->
+
+            <div class="sheet_brand">
+                <div class="sheet_brand_inner">
+                    <div class="brand_seach_box">
+                        <input type="text" placeholder="브랜드 검색하기" class="brand_seach"><i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    
+                    <ul class="brand_seach_filter">
+                        <li>All</li>
+                        <li>
+                            <ul class="Hangul_filter">
+                                <li>ㄱ</li>
+                                <li>ㄴ</li>
+                                <li>ㄷ</li>
+                                <li>ㄹ</li>
+                                <li>ㅁ</li>
+                                <li>ㅂ</li>
+                                <li>ㅅ</li>
+                                <li>ㅇ</li>
+                                <li>ㅈ</li>
+                                <li>ㅊ</li>
+                                <li>ㅋ</li>
+                                <li>ㅌ</li>
+                                <li>ㅍ</li>
+                                <li>ㅎ</li>
+                            </ul>
+                        </li>
+                        <li>ENG</li>
+                    </ul>
+
+                    <ul class="brand_list">
+                        <li>리플로우 커피</li>
+                        <li>슬러핀 커피</li>
+                        <li>프로토콜 커피</li>
+                        <li>컬러드 빈</li>
+                        <li>오드이븐</li>
+                        <li>콩볶는 사람들</li>
+                        <li>커피몽타주</li>
+                        <li>하늘에 커피</li>
+                        <li>디벨로핑룸</li>
+                        <li>디카프워크룸</li>
+                        <li>리플렉트 커피</li>
+                        <li>토치 커피</li>
+                        <li>카페플롬</li>
+                        <li>하우트 커피컴퍼니</li>
+                        <li>커넥츠커피</li>
+                        <li>폰트 커피</li>
+                        <li>차군커피</li>
+                        <li>알렉스더커피</li>
+                        <li>웨이브온 커피</li>
+                        <li>55도 커피</li>
+                        <li>FELT</li>
+                        <li>식물학 커피</li>
+                        <li>히떼 히스토리</li>
+                        <li>베르크</li>
+                        <li>한국커피</li>
+                        <li>리버벨</li>
+                        <li>수수커피</li>
+                    </ul>
+                </div>
+            </div><!--sheet_brand-->
+
+        </div>
+
+    </header>
+
+    <nav>
+        <div class="nav_inner">
+
+            <input type="checkbox" id="Quick_search_open_btn">
+            <div class="Quick_search_box Quick_button_box">
+                <label for="Quick_search_open_btn" class="Quick_search_open_btn_label"><i class="xi-search"></i></label>
+
+                <!-- <div class="search_sheet">
+                    <div class="search_sheet_inner">
+                        <label for="Quick_search_open_btn" class="search_sheet_close"><i class="xi-close"></i></label>
+                        <div class="search_box_outer"><input type="text" id="Quick_search"><button class="search_btn"><i class="xi-search"></i></button></div>
+                        <h4>인기 검색어</h4>
+                        <ul class="best_search">
+                            <li><a href="#!">바디워시</a></li>
+                            <li><a href="#!">디퓨져</a></li>
+                            <li><a href="#!">향수</a></li>
+                            <li><a href="#!">핸드크림</a></li>
+                            <li><a href="#!">선물</a></li>
+                            <li><a href="#!">데메테르 시그니처</a></li>
+                            <li><a href="#!">열쇠고리</a></li>
+                            <li><a href="#!">데메테르</a></li>
+                            <li><a href="#!">탄생화선물 에디션</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <div class="title_tag">검색</div>
+            </div><!--Quick_search_box-->
+            
+            <div class="Quick_cart_box Quick_button_box">
+                <a href="#!"><i class="xi-user"></i></a>
+                <div class="title_tag">마이페이지</div>
+            </div><!--Quick_delivery_box-->
+            
+            <div class="Quick_cart_box Quick_button_box">
+                <a href="#!"><i class="xi-cart"></i></a>
+                <div class="title_tag">장바구니</div>
+            </div><!--Quick_delivery_box-->
+
+            <div class="Quick_delivery_box Quick_button_box">
+                <a href="#!"><i class="xi-truck xi-flip-horizontal"></i></a>
+                <div class="title_tag">배송조회</div>
+            </div><!--Quick_delivery_box-->
+
+            <div class="Quick_clock_box Quick_button_box">
+                <a href="#!"><i class="xi-clock"></i></a>
+                <div class="title_tag">최근 본 상품</div>
+            </div><!--Quick_delivery_box-->
+            
+            <div class="Quick_top_box Quick_button_box Move">
+                <i class="xi-angle-up"></i>
+            </div><!--top_box-->
+            
+            <div class="Quick_bottom_box Quick_button_box Move">
+                <i class="xi-angle-down"></i>
+            </div><!--bottom_box-->
+
+        </div>
+    </nav>
+
+    <div class="floating_banner">
+        <div class="img_box">
+            <img src="./imags/mian/floating_banner.png" alt="">
+        </div>
+        <div class="text_box">
+            <p>취향 테스트 <span>GO</span><i class="xi-long-arrow-right"></i></p>
+        </div>
+    </div>
+
 
     <div class="wrap">
         
@@ -186,10 +430,12 @@
 
                 <div class="filter"></div>
 
-                <input type="checkbox" id="DetailsBtn">
+                <input type="button" onclick="BtnEvent()" value="상세정보 더보기" class="De_btn">
+
+                <!-- <input type="checkbox" id="DetailsBtn">
                 <label for="DetailsBtn" class="De_btn" onclick="Event()">
                     상세정보 더보기<i class="xi-angle-down-min"></i>
-                </label>
+                </label> -->
                     
                 <!-- <button id="Toggle_Btn" class="Toggle_Btn" onclick="BtnEvent()">상세정보 더보기
                     <i class="xi-angle-down-min"></i>
@@ -199,6 +445,7 @@
         </section><!--Details--> 
 
         <section id="Shipping"> 
+
             <div class="tab_nav tab_nav_02">
                 <ul>
                     <li class="li_01"><a href="#Details">상품상세정보</a></li>
@@ -263,6 +510,7 @@
         </section>
 
         <section id="Review">
+
             <div class="tab_nav tab_nav_03">
                 <ul>
                     <li class="li_01"><a href="#Details">상품상세정보</a></li>
@@ -271,6 +519,127 @@
                     <li class="li_04"><a href="#Inquiry">상품문의</a></li>
                 </ul>
             </div>
+
+            <div class="Review_box">
+                <h3>상품후기</h3>
+                <ul>
+                    <li>
+                        <div class="title best_review"><p>베스트리뷰</p></div>
+                        <div class="text">
+                            부드럽고 신선한맛은 원두가 좋아서겠죠^^.원두 볶아 당일 배송이 굿입니다.
+                        </div>
+                        <div class="user_id">네이버페이 구매자</div>
+                        <div class="bay">2022.06.24</div>
+                    </li>
+                    <li>
+                        <div class="title best_review"><p>베스트리뷰</p></div>
+                        <div class="text">
+                            깊은맛, 혀끝과 목에서 시작되는 짜릿함.
+                        </div>
+                        <div class="user_id">lunavell</div>
+                        <div class="bay">2022.06.18</div>
+                    </li>
+                    <li>
+                        <div class="title best_review"><p>베스트리뷰</p></div>
+                        <div class="text">
+                            예가체프 커피 산미 좋아요
+                        </div>
+                        <div class="user_id">sookye22</div>
+                        <div class="bay">2022.06.18</div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                        </div>
+                        <div class="text">
+                            봄날의 향기로 피어납니다
+                        </div>
+                        <div class="user_id">sookye22</div>
+                        <div class="bay">2022.07.16</div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                        </div>
+                        <div class="text">
+                            스프링블랜드를 먹어본 뒤로는 다른 원두는 구매한적이 없...
+                        </div>
+                        <div class="user_id">네이버페이 구매자</div>
+                        <div class="bay">2022.06.28</div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                        </div>
+                        <div class="text">
+                            믿고 삽니다.
+                        </div>
+                        <div class="user_id">qlwjdrb@naver.com</div>
+                        <div class="bay">2022.06.08</div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                        </div>
+                        <div class="text">
+                            커피향으 잘 보존되고 원두가 신선한것으로 사용~~
+                        </div>
+                        <div class="user_id">네이버페이 구매자</div>
+                        <div class="bay">2022.05.16</div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                        </div>
+                        <div class="text">
+                            가성비 좋은 커피. 자주 주문합니다
+                        </div>
+                        <div class="user_id">네이버페이 구매자</div>
+                        <div class="bay">2022.05.09</div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                            <i class="xi-star"></i>
+                        </div>
+                        <div class="text">
+                            맛있어요
+                        </div>
+                        <div class="user_id">jh94146654</div>
+                        <div class="bay">2022.04.21</div>
+                    </li>
+                </ul>
+
+                <button class="pageBtn">1</button>
+                <div class="Btn_box">
+                    <button class="Btn01">상품후기 전체보기</button>
+                    <button class="Btn02">상품후기 글쓰기</button>
+                </div>
+            </div>
+
         </section>
 
         <section id="Inquiry">
@@ -281,6 +650,35 @@
                     <li class="li_03"><a href="#Review">상품후기</a></li>
                     <li class="li_04 on"><a href="#Inquiry">상품문의</a></li>
                 </ul>
+            </div>
+
+            <div class="Inquiry_box">
+                <h3>상품 Q&A</h3>
+                <ol>
+                    <li>
+                        <!-- <div class="title best_review">1</div> -->
+                        <div class="title">
+                            <i class="xi-lock-o"></i> 원두문의
+                        </div>
+                        <div class="bay">2022.06.24</div>
+                        <div class="state">답변완료</div>
+                    </li>
+                    <li>
+                        <!-- <div class="title best_review">1</div> -->
+                        <div class="title">
+                            <i class="xi-lock-o"></i> 원두문의
+                        </div>
+                        <div class="bay">2022.06.22</div>
+                        <div class="state">답변완료</div>
+                    </li>
+                    
+                </ol>
+
+                <button class="pageBtn">1</button>
+                <div class="Btn_box">
+                    <button class="Btn01">상품문의 전체보기</button>
+                    <button class="Btn02">상품문의 글쓰기</button>
+                </div>
             </div>
         </section>
 
@@ -304,11 +702,100 @@
     </div><!--warp-->
 
 
+    <footer class="footer">
 
+        <div class="footer_menu">
+            <div class="footer_menu_inner">
 
+                <div class="cs_center">
+                    <h5>cs center</h5>
+                    <p class="call">070-4647-1868</p>
+                    <p>오전 10:00 ~ 오후 7:00<br>
+                        점심시간 : 오후 12:00 ~ 2:00<br>
+                        토 / 일 / 공휴일 휴무
+                    </p>
+                </div><!--cs_center-->
 
+                <div class="store_guide">
+                    <h5>store guide</h5>
 
+                    <div class="metapo_box">
+                        <div class="help">
+                            <i class="xi-microphone-o"></i>
+                            <p>HELP</p>
+                            <div>고객센터</div>
+                        </div>
+                        <div class="order">
+                            <i class="xi-box"></i>
+                            <p>ORDER</p>
+                            <div>배송조회</div>
+                        </div>
+                        <div class="qna">
+                            <i class="xi-forum-o"></i>
+                            <p>Q & A</p>
+                            <div>상품문의</div>
+                        </div>
+                        <div class="review">
+                            <i class="xi-comment-o"></i>
+                            <p>REVIEW</p>
+                            <div>상품후기</div>
+                        </div>
+                    </div>
+                </div><!--store_guide-->
 
+                <div class="return_exchange">
+                    <h5>return · exchange</h5>
+
+                    <input type="radio" id="delivery" name="exchange" checked>
+                    <input type="radio" id="return" name="exchange">
+
+                    <div class="label_box">
+                        <label for="delivery" class="tab01">배송/택배</label>
+                        <label for="return" class="tab02">교환/반품</label>
+                    </div>
+
+                    <div class="sheet">
+                        <div class="sheet_01">
+                            <p>택배 : 로젠택배 : 1588-9988</p>
+                            <p>월~금 08:00~18:00 / 토 09:00~13:00</p>
+                            <div class="button"><a href="#!">택배사 바로가기</a></div>
+                        </div>
+                        <div class="sheet_02">
+                            <p>주소:서울 강남구 테헤란로2길 27 페스트파이브 빌딩 9층 915호</p>
+                            <p>고객센터로 문의해주세요.</p>
+                        </div>
+                    </div>
+                </div><!--return_exchange-->
+
+            </div><!--footer_menu_inner-->
+            <div class="footer_menu_side">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT US</li>
+                    <li>AGREEMENT</li>
+                    <li class="on">PRIVACY POLICY</li>
+                    <li>STORE GUIDE</li>
+                    <li class="last">CS CENTER</li>
+                </ul>
+                <div class="sns_box">
+                    <a href="#!"><i class="xi-kakaotalk"></i></a>
+                    <a href="#!"><i class="xi-instagram"></i></a>
+                </div>
+            </div><!--footer_menu_side-->
+        </div><!--footer_menu-->
+
+        <div class="footer_text">
+            <P><span style="color: #222;">(주)컨슈머브릿지</span> 대표: 신재현, 박성환 | 개인정보보호책임자: 신재현 | 사업자등록번호: 713-86-01467 | 통신판매업신고번호: 제2021-서울강남-02469호<br>
+                사업장소재지: 서울 강남구 테헤란로2길 27 패스트파이브 빌딩 9층 915호<br>
+                주식회사 컨슈머브릿지는 전자상거래 등에서의 소비자보호에 관한 법률에 따른 통신판매중개자로서 중개하는 통신판매에 관하여서는 통신판매의 당사자가 아니며<br>
+                상품의 주문, 배송 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.</P>
+            <div><a href="./index.html"><img src="./imags/mian/koke_logo.png" alt=""></a></div>
+        </div><!--footer_text-->
+
+        <div class="footer_copyright">
+            <p>© 2021 Consumer Bridge, Inc. All rights reserved</p>
+        </div><!--footer_copyright-->
+    </footer>
 
     
 </body>

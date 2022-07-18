@@ -72,8 +72,9 @@ aside .filter {
     position: sticky;
     background-color: #fdeae0;
     width: 270px;
-    top: 150px;
+    top: 100px;
     padding: 0 15px;
+    padding-top: 50px;
 }
 
 aside .filter>li {
@@ -103,6 +104,15 @@ aside .filter>li h4 {
     line-height: 70px;
     font-size: 17px;
     font-weight: 400;
+}
+
+
+
+
+
+.filter li .sheet .on {
+    color: white;
+    background-color: #22222286;
 }
 
 
@@ -201,6 +211,9 @@ aside .filter>li h4 {
     padding-left: 20px;
     font-weight: 300;
     cursor: pointer;
+}
+.product_coner .alignment .on {
+    font-weight: 500;
 }
 
 

@@ -2,7 +2,10 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 img {display: block;}
-a {text-decoration: none;}
+a {
+    text-decoration: none;
+    color: #222;
+}
 li {list-style: none;}
 
 
@@ -167,6 +170,53 @@ li {list-style: none;}
 }
 
 
+.Lnb_box .lnb li .lnb02 .Subscription {
+    position: relative;
+}
+.Lnb_box .lnb li .lnb02 .Subscription .speech_bubble {
+    position: absolute;
+
+    animation-name: bubble;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bubble {
+    0% {top: 100%;}
+    50% {top: calc(100% + 5px);}
+    100% {top: 100%;}
+}
+
+.Lnb_box .lnb li .lnb02 .Subscription .speech_bubble {
+    position: absolute;
+    font-size: 12px;
+    width: 100px;
+    height: 22px;
+    line-height: 22px;
+    background-color: #ff6c57;
+    text-align: center;
+    /* top: calc(100% + 10px); */
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    border-radius: 11px;
+    z-index: 20;
+}
+.Lnb_box .lnb li .lnb02 .Subscription .speech_bubble::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    /* border-bottom: 10px solid #222; */
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ff6c57;
+    top: -7px;
+    left: 40px;
+
+}
 
 
 
@@ -363,7 +413,6 @@ nav {
 }
 .nav_inner .Quick_button_box.Move {
     background-color: #fdeae0;
-    opacity: 0;
 }
 .nav_inner .Quick_clock_box {
     border-bottom: 1px solid #ccc;
@@ -418,13 +467,17 @@ nav {
 }
 
 
+
 .floating_banner {
     position: fixed;
     bottom: 40px;
     right: 70px;
     z-index: 20;
     cursor: pointer;
-    opacity: 0;
+    /* opacity: 0; */
+}
+.floating_banner:hover {
+    transform: scale(1.04);
 }
 
 .floating_banner .img_box {

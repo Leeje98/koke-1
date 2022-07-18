@@ -3,7 +3,7 @@
     width: 1278px;
     margin: 0 auto 100px;
 
-    border: 1px solid #333;
+    /* border: 1px solid #333; */
 }
 
 label {cursor: pointer;}
@@ -47,7 +47,7 @@ label {cursor: pointer;}
     height: 400px;
     margin-bottom: 100px;
 
-    border: 1px solid #333;
+    /* border: 1px solid #333; */
 }
 .img_container .main_img img {
     width: 100%;
@@ -79,7 +79,7 @@ label {cursor: pointer;}
     height: 130px;
     cursor: pointer;
 
-    border: 1px solid #333;
+    /* border: 1px solid #333; */
 }
 
 
@@ -502,8 +502,192 @@ label {cursor: pointer;}
     background-color: transparent;
     font-size: 20px;
     text-align: center;
+    cursor: pointer;
 }
-.Details_box .Sh_btn i,
+.Details_box .De_btn i,
 .Details_box button i {
     padding-left: 10px;
+}
+
+
+
+
+
+.Shipping_box {
+    margin: 70px 0 150px;
+}
+
+.Shipping_box h3 {
+    padding-left: 10px;
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.Shipping_box ul {
+    box-sizing: border-box;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
+.Shipping_box ul li {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    color: #222;
+}
+
+.Shipping_box ul li .title {
+    width: 320px;
+    font-size: 17px;
+}
+
+.Shipping_box ul li .text {
+    padding: 10px 0;
+    width: 950px;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.Shipping_box ul p {
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 70px;
+}
+
+
+
+
+
+
+.Review_box {
+    margin: 70px 0 150px;
+}
+
+.Review_box h3 {
+    padding-left: 10px;
+    font-size: 19px;
+    line-height: 30px;
+    border-bottom: 1px solid #333;
+    font-weight: 500;
+}
+
+.Review_box ul {
+    box-sizing: border-box;
+}
+
+.Review_box ul li {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    color: #222;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.Review_box ul li .title {
+    text-align: center;
+    width: 150px;
+    color: rgb(218, 218, 0);
+}
+.Review_box ul li .title p {
+    color: white;
+    font-size: 13px;
+    background-color: #ff6c57;
+    display: inline-block;
+    padding: 1px 5px;
+}
+.Review_box ul li .text {
+    width: 750px;
+}
+.Review_box ul li .user_id {
+    text-align: center;
+    width: 200px;
+}
+.Review_box ul li .bay {
+    text-align: center;
+    width: 200px;
+}
+
+
+
+
+
+
+.pageBtn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    border-radius: 15px;
+    margin: 50px auto 0;
+    cursor: pointer;
+}
+
+.Btn_box {
+    float: right;
+}
+
+.Btn_box .Btn01, 
+.Btn_box .Btn02 {
+    width: 125px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+.Btn_box .Btn01 {
+    background-color: white;
+    /* border: 1px solid #ff6c57; */
+    border: 1px solid #ccc;
+}
+.Btn_box .Btn02 {
+    background-color: #ff6c57;
+    color: white;
+}
+
+
+
+
+
+
+.Inquiry_box {
+    margin: 70px 0 150px;
+}
+
+.Inquiry_box h3 {
+    padding-left: 10px;
+    font-size: 19px;
+    line-height: 30px;
+    border-bottom: 1px solid #333;
+    font-weight: 500;
+}
+
+.Inquiry_box ol {
+    counter-reset: item;
+    list-style-type: none;
+}
+.Inquiry_box ol li {
+    /* list-style: decimal; */
+    display: flex;
+    padding: 10px 0 10px 70px;
+    border-bottom: 1px solid #ccc;
+    color: #222;
+    font-weight: 300;
+    font-size: 14px;
+    cursor: pointer;
+}
+.Inquiry_box ol li::before {
+
+    content: counter(item) "  "; 
+    counter-increment: item;
+}
+
+.Inquiry_box ol li .title {
+    padding-left: 100px;
+    width: 800px;
+}
+.Inquiry_box ol li .bay {
+    width: 200px;
+    text-align: center;
 }

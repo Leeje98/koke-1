@@ -26,6 +26,14 @@ button:hover a {
 
 
 
+.floating_banner {
+    opacity: 0;
+}
+
+.nav_inner .Quick_button_box.Move {
+    opacity: 0;
+}
+
 
 
 /* ----------- main_visual -------------- */
@@ -149,6 +157,9 @@ button:hover a {
 
 .product_coner .product_list li {
     cursor: pointer;
+}
+.product_coner .product_list li a {
+    color: #222;
 }
 
 .product_coner .product_list li .thumbnail {

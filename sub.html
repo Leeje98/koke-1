@@ -23,8 +23,14 @@
     <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
     <script src="./js/jquery.mb.YTPlayer.min.js" defer></script>
 
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" defer></script>
+    <!-- 애니메이션 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js" defer></script>
+    <!-- 화면이동 -->
+
     <!--ScrollMagic-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" defer></script>
 
 
     <link rel="stylesheet" href="./css/basics.css">
@@ -72,7 +78,10 @@
                     <ul class="lnb02">
                         <li><a href="#!">싱글오리진</a></li>
                         <li><a href="#!">블렌드</a></li>
-                        <li><a href="#!">구독하기</a></li>
+                        <li class="Subscription"><a href="#!">
+                            구독하기
+                            <div class="speech_bubble">무료배송</div>
+                        </a></li>
                         <li class="seash_li">
                             <input type="text" class="lnb_seash" id="Lnb_seash">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -291,7 +300,7 @@
         <section class="main_box">
 
             <aside>
-                <ul class="filter">
+                <ul class="filter" id="FilterBox">
                     <h3>커피 찾기</h3>
                     <li class="decaffein">
                         <h4>디카페인</h4>
@@ -410,12 +419,12 @@
                 <div class="product_coner">
 
                     <ul class="alignment">
+                        <li class="on">등록일순</li>
                         <li>추천순</li>
                         <li>판매인기순</li>
                         <li>낮은가격순</li>
                         <li>높은가격순</li>
                         <li>상품평순</li>
-                        <li>등록일순</li>
                     </ul>
             
                     <ul class="product_list">

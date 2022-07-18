@@ -45,6 +45,7 @@
     height: 280px;
     margin-right: 80px;
     /* object-fit: cover; */
+    background-color: white;
 }
 
 .hot_2022_swiper .swiper-wrapper .swiper-slide .box .product_img img {
@@ -95,6 +96,17 @@
     line-height: 40px;
     font-weight: lighter;
 }
+
+
+
+.swiper-slide-active {
+    opacity: 1;
+}
+.swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+
 
 
 
