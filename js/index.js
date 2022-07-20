@@ -86,6 +86,23 @@ const mainVisualSwiper = new Swiper('.main_visual .swiper', {
 
 
 
+// const categoris = document.querySelectorAll('.categori li')
+
+// categoris.forEach(function (element) {
+//   element.addEventListener('click', () => {
+//     this.classList.add('choice')
+//   })
+// })
+
+
+
+
+
+
+
+
+
+
 
 
 const scrollEls = document.querySelectorAll('.scroll_el')

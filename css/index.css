@@ -57,7 +57,7 @@ button:hover a {
     position: relative;
     width: 800px;
     height: 250px;
-    margin-top: 200px;
+    margin-top: 150px;
     text-align: center;
 
     /* background-color: aqua; */
@@ -87,8 +87,8 @@ button:hover a {
     /* background-color: aqua; */
 }
 
-.main_visual .visual-button-prev{top : 20%}
-.main_visual .visual-button-next{top : 65%}
+.main_visual .visual-button-prev{top : 180px}
+.main_visual .visual-button-next{top : 60%}
 
 .main_visual button {
     position: absolute;
