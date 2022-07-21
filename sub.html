@@ -7,21 +7,13 @@
     <title>koke</title>
 
     <!--제이쿼리-->
-    <script src="./js/jquery-1.12.4.min.js"></script>
-
-    <!--스와이퍼-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+    <!-- <script src="./js/jquery-1.12.4.min.js"></script> -->
 
     <!--폰트어썸-->
     <script src="https://kit.fontawesome.com/2c083cd22c.js" crossorigin="anonymous" defer></script>
     
     <!--XEICON-->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-
-    <!--YTPlayer-->
-    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
-    <script src="./js/jquery.mb.YTPlayer.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" defer></script>
@@ -57,9 +49,9 @@
 
         <div class="Gnb_box">
             <ul class="gnb">
-                <li>회원가입</li>
-                <li>로그인</li>
-                <li class="cart">장바구니<i class="fa-solid fa-bag-shopping"></i><div class="bacge">1</div></li>
+                <li><a href="#!">회원가입</a></li>
+                <li><a href="#!">로그인</a></li>
+                <li class="cart"><a href="#!">장바구니<i class="fa-solid fa-bag-shopping"></i><div class="bacge">1</div></a></li>
             </ul>
         </div>
 
@@ -67,8 +59,119 @@
             <ul class="lnb">
                 <li>
                     <ul class="lnb01">
-                        <li class="AllMenu"><i class="fa-solid fa-bars"></i></li>
-                        <li class="brand">브랜드 검색<p style="display:inline-block">|</p></li>
+                        <li class="AllMenu">
+                            <i class="fa-solid fa-bars"></i>
+                            <div class="sheet_All">
+                                <ul>
+                                    <li>
+                                        <ul>
+                                            <h3>전체메뉴</h3>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <h3><a href="#!">모든커피</a></h3>
+                                            <li><a href="#!">브랜드</a></li>
+                                            <li><a href="#!">싱글오리진</a></li>
+                                            <li><a href="#!">블렌드</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <h3><a href="#!">내 입맛 커피</a></h3>
+                                            <li><a href="#!">내 커피 취향 테스트</a></li>
+                                            <li><a href="#!">구독하기</a></li>
+                                            <li><a href="#!">구독후기</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <h3><a href="#!">커뮤니티</a></h3>
+                                            <li><a href="#!">EVENT / NEWS</a></li>
+                                            <li><a href="#!">REVIEW</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <h3><a href="#!">고객센터</a></h3>
+                                            <li><a href="#!">NOTICE</a></li>
+                                            <li><a href="#!">Q & A</a></li>
+                                            <li><a href="#!">1:1 문의</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <h3><a href="#!">ABOUT AS</a></h3>
+                                            <li><a href="#!">BRAND</a></li>
+                                            <li><a href="#!">입점문의</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="brand">
+                            브랜드 검색<p style="display:inline-block">|</p>
+                            <div class="sheet_brand">
+                                <div class="sheet_brand_inner">
+                                    <div class="brand_seach_box">
+                                        <input type="text" placeholder="브랜드 검색하기" class="brand_seach"><i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                    
+                                    <ul class="brand_seach_filter">
+                                        <li class="on">All</li>
+                                        <li>
+                                            <ul class="Hangul_filter">
+                                                <li>ㄱ</li>
+                                                <li>ㄴ</li>
+                                                <li>ㄷ</li>
+                                                <li>ㄹ</li>
+                                                <li>ㅁ</li>
+                                                <li>ㅂ</li>
+                                                <li>ㅅ</li>
+                                                <li>ㅇ</li>
+                                                <li>ㅈ</li>
+                                                <li>ㅊ</li>
+                                                <li>ㅋ</li>
+                                                <li>ㅌ</li>
+                                                <li>ㅍ</li>
+                                                <li>ㅎ</li>
+                                            </ul>
+                                        </li>
+                                        <li>ENG</li>
+                                    </ul>
+                
+                                    <ul class="brand_list">
+                                        <li>리플로우 커피</li>
+                                        <li>슬러핀 커피</li>
+                                        <li>프로토콜 커피</li>
+                                        <li>컬러드 빈</li>
+                                        <li>오드이븐</li>
+                                        <li>콩볶는 사람들</li>
+                                        <li>커피몽타주</li>
+                                        <li>하늘에 커피</li>
+                                        <li>디벨로핑룸</li>
+                                        <li>디카프워크룸</li>
+                                        <li>리플렉트 커피</li>
+                                        <li>토치 커피</li>
+                                        <li>카페플롬</li>
+                                        <li>하우트 커피컴퍼니</li>
+                                        <li>커넥츠커피</li>
+                                        <li>폰트 커피</li>
+                                        <li>차군커피</li>
+                                        <li>알렉스더커피</li>
+                                        <li>웨이브온 커피</li>
+                                        <li>55도 커피</li>
+                                        <li>FELT</li>
+                                        <li>식물학 커피</li>
+                                        <li>히떼 히스토리</li>
+                                        <li>베르크</li>
+                                        <li>한국커피</li>
+                                        <li>리버벨</li>
+                                        <li>수수커피</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
                         <li class="coffee"><a href="./sub.html">모든커피</a></li>
                         <li class="point"><a href="#!">내 커피 취향테스트</a></li>
                     </ul>
@@ -76,6 +179,9 @@
                 <!-- <li><div class="logo_box"><a href="./index.html"><img src="./imags/mian/koke_logo.png" alt=""></a></div></li> -->
                 <li>
                     <ul class="lnb02">
+                        
+                        <div class="logo_box"><a href="./index.html"><img src="./imags/mian/koke_logo.png" alt=""></a></div>
+    
                         <li><a href="#!">싱글오리진</a></li>
                         <li><a href="#!">블렌드</a></li>
                         <li class="Subscription"><a href="#!">
@@ -90,121 +196,10 @@
                 </li>
                 <li></li>
                 
-                <div class="logo_box"><a href="./index.html"><img src="./imags/mian/koke_logo.png" alt=""></a></div>
+                <!-- <div class="logo_box"><a href="./index.html"><img src="./imags/mian/koke_logo.png" alt=""></a></div> -->
                 <!-- <div class="logo_box_bg"><a href="#!"><img src="./imags/mian/koke_logo.png" alt=""></a></div> -->
 
             </ul>
-
-
-
-            <div class="sheet_All">
-                <ul>
-                    <li>
-                        <ul>
-                            <h3>전체메뉴</h3>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul>
-                            <h3>모든커피</h3>
-                            <li>브랜드</li>
-                            <li>싱글오리진</li>
-                            <li>블렌드</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul>
-                            <h3>내 입맛 커피</h3>
-                            <li>내 커피 취향 테스트</li>
-                            <li>구독하기</li>
-                            <li>구독후기</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul>
-                            <h3>커뮤니티</h3>
-                            <li>EVENT / NEWS</li>
-                            <li>REVIEW</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul>
-                            <h3>고객센터</h3>
-                            <li>NOTICE</li>
-                            <li>Q & A</li>
-                            <li>1:1 문의</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul>
-                            <h3>ABOUT AS</h3>
-                            <li>BRAND</li>
-                            <li>입점문의</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div><!-- sheet_All -->
-
-            <div class="sheet_brand">
-                <div class="sheet_brand_inner">
-                    <div class="brand_seach_box">
-                        <input type="text" placeholder="브랜드 검색하기" class="brand_seach"><i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                    
-                    <ul class="brand_seach_filter">
-                        <li>All</li>
-                        <li>
-                            <ul class="Hangul_filter">
-                                <li>ㄱ</li>
-                                <li>ㄴ</li>
-                                <li>ㄷ</li>
-                                <li>ㄹ</li>
-                                <li>ㅁ</li>
-                                <li>ㅂ</li>
-                                <li>ㅅ</li>
-                                <li>ㅇ</li>
-                                <li>ㅈ</li>
-                                <li>ㅊ</li>
-                                <li>ㅋ</li>
-                                <li>ㅌ</li>
-                                <li>ㅍ</li>
-                                <li>ㅎ</li>
-                            </ul>
-                        </li>
-                        <li>ENG</li>
-                    </ul>
-
-                    <ul class="brand_list">
-                        <li>리플로우 커피</li>
-                        <li>슬러핀 커피</li>
-                        <li>프로토콜 커피</li>
-                        <li>컬러드 빈</li>
-                        <li>오드이븐</li>
-                        <li>콩볶는 사람들</li>
-                        <li>커피몽타주</li>
-                        <li>하늘에 커피</li>
-                        <li>디벨로핑룸</li>
-                        <li>디카프워크룸</li>
-                        <li>리플렉트 커피</li>
-                        <li>토치 커피</li>
-                        <li>카페플롬</li>
-                        <li>하우트 커피컴퍼니</li>
-                        <li>커넥츠커피</li>
-                        <li>폰트 커피</li>
-                        <li>차군커피</li>
-                        <li>알렉스더커피</li>
-                        <li>웨이브온 커피</li>
-                        <li>55도 커피</li>
-                        <li>FELT</li>
-                        <li>식물학 커피</li>
-                        <li>히떼 히스토리</li>
-                        <li>베르크</li>
-                        <li>한국커피</li>
-                        <li>리버벨</li>
-                        <li>수수커피</li>
-                    </ul>
-                </div>
-            </div><!--sheet_brand-->
 
         </div>
 

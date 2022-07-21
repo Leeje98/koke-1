@@ -110,20 +110,25 @@ li {list-style: none;}
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    /* position: relative; */
 }
 
-.Lnb_box .lnb li {
+.Lnb_box .lnb>li {
     width: 639px;
 }
 
-.Lnb_box .lnb li ul {
+.Lnb_box .lnb li .lnb01,
+.Lnb_box .lnb li .lnb02 {
     display: flex;
     justify-content: space-between;
     text-align: center;
     line-height: 50px;
 
     /* border: 1px solid #333; */
+}
+.Lnb_box .lnb li .lnb01>li,
+.Lnb_box .lnb li .lnb02>li {
+    width: 639px;
 }
 .Lnb_box .lnb li ul li a {
     color: #222;
@@ -140,6 +145,9 @@ li {list-style: none;}
     font-size: 28px;
     line-height: 45px;
     text-align: start;
+}
+.Lnb_box .lnb li .lnb01 .AllMenu .sheet_All {
+    line-height: 24px;
 }
 .Lnb_box .lnb li .lnb01 .brand {
     padding-left: 30px;
@@ -170,6 +178,9 @@ li {list-style: none;}
 }
 
 
+.Lnb_box .lnb li .lnb02 {
+    position: relative;
+}
 .Lnb_box .lnb li .lnb02 .Subscription {
     position: relative;
 }
@@ -183,7 +194,7 @@ li {list-style: none;}
 
 @keyframes bubble {
     0% {top: 100%;}
-    50% {top: calc(100% + 5px);}
+    50% {top: calc(100% + 6px);}
     100% {top: 100%;}
 }
 
@@ -224,8 +235,8 @@ li {list-style: none;}
     position: absolute;
     width: 150px;
     top: 20px;
-    /* left: 515px; */
-    left: 639px;
+    /* left: 639px; */
+    left: -5px;
     transform: translate(-50%, -50%);
     border: 30px solid white;
     border-radius: 50%;
@@ -261,10 +272,13 @@ li {list-style: none;}
     border-bottom: 1px solid #ddd; 
     box-sizing: border-box;
     position: absolute;
-    width: 100%;
+    /* width: 100%; */
+    width: 100vw;
+    overflow-x: visible;
     top: 51px;
     left: 0;
     background-color: white;
+    line-height: 24px;
 
     overflow: hidden;
     height: 0;
@@ -281,9 +295,11 @@ li {list-style: none;}
     padding: 90px 0 80px;
 }
 
+
 .sheet_All>ul li ul h3 {
     cursor: pointer;
     margin-bottom: 30px;
+    font-size: 21px;
 }
 .sheet_All>ul li ul li {
     line-height: 15px;
@@ -341,6 +357,11 @@ li {list-style: none;}
     font-size: 16px;
     line-height: 30px;
     cursor: pointer;
+    height: 30px;
+}
+.brand_seach_filter .on {
+    background-color: #333;
+    color: white;
 }
 
 
@@ -350,6 +371,7 @@ li {list-style: none;}
 .Hangul_filter>li {
     font-size: 16px;
     cursor: pointer;
+    line-height: 30px;
 }
 .Hangul_filter>li ~ li::before {
     content: "";

@@ -73,8 +73,7 @@ aside .filter {
     background-color: #fdeae0;
     width: 270px;
     top: 100px;
-    padding: 0 15px;
-    padding-top: 50px;
+    padding: 50px 15px 0;
 }
 
 aside .filter>li {

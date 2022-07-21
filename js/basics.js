@@ -7,11 +7,11 @@ topBannerCloseBtn.onclick = hiddenEvent
 
 function hiddenEvent() {
   document.querySelector('.topBanner').style.height = '0';
-  document.querySelector('.main_visual').style.paddingTop = '100px';
 
-  // document.querySelector('aside .filter').style.top = '100px';
+  document.querySelector('.main_visual').style.paddingTop = '100px';
+  document.querySelector('.main_visual .visual-button-prev').style.paddingTop = '0';
+
   document.querySelector('aside .filter').style.paddingTop = '0';
-  // document.getElementById('#FilterBox').style.paddingTop = '0';
 }
 // 탑배너 닫히게 하기
 
@@ -40,11 +40,13 @@ downBtn.addEventListener('click', () => {
 
 
 
-const HamBtn = document.querySelector('.AllMenu')
-const sheetAll = document.querySelector('.sheet_All')
+const HamBtn = document.querySelector('.lnb01 .AllMenu')
+const sheetAll = document.querySelector('.AllMenu .sheet_All')
 
 HamBtn.onmouseover = HamslideDownEvent
-sheetAll.onmouseleave  = HamslideUpEvent
+// sheetAll.onmouseleave  = HamslideUpEvent
+// sheetAll.onmouseout  = HamslideUpEvent
+HamBtn.onmouseout  = HamslideUpEvent
 
 function HamslideDownEvent() {
   // document.querySelector('.sheet_All').style.height = 'auto'
@@ -65,7 +67,9 @@ const Brand = document.querySelector('.brand')
 const sheetBrand = document.querySelector('.sheet_brand')
 
 Brand.onmouseover = brandslideDownEvent
-sheetBrand.onmouseleave  = brandslideUpEvent
+// sheetBrand.onmouseleave  = brandslideUpEvent
+// sheetBrand.onmouseout  = brandslideUpEvent
+Brand.onmouseout  = brandslideUpEvent
 
 function brandslideDownEvent() {
   // document.querySelector('.sheet_All').style.height = 'auto'
