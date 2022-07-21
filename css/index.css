@@ -154,9 +154,25 @@ button:hover a {
 
 
 
+
+
 .product_coner .product_list li {
     cursor: pointer;
+    transform: translateY(70px);
+    opacity: 0;
+    transition: 0.5s;
 }
+
+.product_coner .product_list .show_pd {
+    transform: translateY(0);
+    opacity: 1;
+}
+/* ScrollMagic 효과 */
+
+
+
+
+
 .product_coner .product_list li a {
     color: #222;
 }

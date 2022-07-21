@@ -86,13 +86,7 @@ const mainVisualSwiper = new Swiper('.main_visual .swiper', {
 
 
 
-// const categoris = document.querySelectorAll('.categori li')
 
-// categoris.forEach(function (element) {
-//   element.addEventListener('click', () => {
-//     this.classList.add('choice')
-//   })
-// })
 
 
 
@@ -117,6 +111,28 @@ scrollEls.forEach((scrollEl) => {
     .addTo(new ScrollMagic.Controller())
 })
 // ScrollMagic       -- sub_banner  -- brand_video
+
+
+
+
+
+const Products = document.querySelectorAll('.product_list li')
+
+Products.forEach((Product) => {
+  new ScrollMagic
+    .Scene({       // 감지할 위치 
+      triggerElement: Product,   // 감지할 대상
+      triggerHook: 0.7 // 화면 높이를 0에서 1로 봤을때 0.7쯤 오면 이벤트를 일으키기 위해 Hook이라는 고리를 걸어놓고 감지하게 한다 (0.7이나 0.8이 제일 많이 쓰인다)
+    })
+    .setClassToggle(Product, 'show_pd')
+    .addTo(new ScrollMagic.Controller())
+})
+// ScrollMagic      --- 상품 리스트 밑에서 위로 효과
+
+
+
+
+
 
 
 
