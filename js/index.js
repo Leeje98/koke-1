@@ -12,7 +12,7 @@ $(function(){
       startAt:0,                                // 동영상이 시작되어야 하는 초
       opacity:1,                                // 불투명도
       showControls: false,                      // 영상 컨트롤(재생바 등) 표시여부
-      playOnlyIfVisible: true                   // 해당 화면 밖에 있을때, 일시 중지 
+      playOnlyIfVisible: true,                  // 해당 화면 밖에 있을때, 일시 중지 
   }); // YTPlayer
 
 

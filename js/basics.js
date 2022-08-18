@@ -8,9 +8,11 @@ topBannerCloseBtn.onclick = hiddenEvent
 function hiddenEvent() {
   document.querySelector('.topBanner').style.height = '0';
 
-  document.querySelector('.main_visual').style.paddingTop = '100px';
+  document.querySelector('.main_visual').style.paddingTop = '150px';
   document.querySelector('.main_visual .visual-button-prev').style.paddingTop = '0';
+  document.querySelector('.main_visual .visual-button-next').style.paddingTop = '0';
 
+  // document.querySelector('aside .filter').style.paddingTop = '0';
   document.querySelector('aside .filter').style.paddingTop = '0';
 }
 // 탑배너 닫히게 하기

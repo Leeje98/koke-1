@@ -73,6 +73,8 @@ aside .filter {
     background-color: #fdeae0;
     width: 270px;
     top: 100px;
+    /* margin-top: 50px; */
+    /* padding: 50px 15px 0; */
     padding: 50px 15px 0;
 }
 
